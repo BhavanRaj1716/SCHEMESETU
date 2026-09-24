@@ -28,3 +28,4 @@ service-account*.json
 # OS & Logs
 .DS_Store
 *.log
+.kilo/
