@@ -1,0 +1,7 @@
+{
+  "error": {
+    "code": "UNAUTHORIZED",
+    "message": "Authentication is not enabled on this server (AUTH_MODE=none).",
+    "details": {}
+  }
+}

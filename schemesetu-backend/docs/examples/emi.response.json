@@ -1,0 +1,16 @@
+{
+  "emi": 3896.55,
+  "totalInterest": 77310.5,
+  "totalRepayment": 327310.5,
+  "assumptions": {
+    "interestRate": 8.0,
+    "tenureMonths": 84,
+    "frequency": "monthly",
+    "moratoriumMonths": 0,
+    "moratoriumInterestTreatment": "needs_verification"
+  },
+  "notes": [
+    "Illustrative monthly-instalment calculation. Actual NSFDC schemes may use quarterly instalments; confirm the schedule with the channelizing agency.",
+    "This is an arithmetic estimate, not a loan offer or approval."
+  ]
+}

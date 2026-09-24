@@ -1,0 +1,188 @@
+{
+  "partners": [
+    {
+      "id": "demo-coop-cbe",
+      "name": "DEMO - Cooperative Bank Branch (Coimbatore)",
+      "type": "Cooperative Bank",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "address": "DEMO address (not a real location)",
+      "latitude": 11.0296,
+      "longitude": 76.9702,
+      "supportedSchemes": [
+        "udyam-nidhi-yojana"
+      ],
+      "officialSource": {
+        "url": null,
+        "document": "DEMO record - simulated for demonstration only",
+        "lastVerified": "2026-09-22",
+        "dataStatus": "DEMO"
+      },
+      "dataStatus": "DEMO",
+      "distanceKm": null,
+      "fundHealth": {
+        "available": false,
+        "message": "Partner-level fund-health information is not available in the current verified dataset."
+      }
+    },
+    {
+      "id": "demo-mfi-cbe",
+      "name": "DEMO - NBFC-MFI Branch (Coimbatore)",
+      "type": "NBFC-MFI",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "address": "DEMO address (not a real location)",
+      "latitude": 11.0045,
+      "longitude": 76.9616,
+      "supportedSchemes": [
+        "aajeevika-micro-finance-yojana"
+      ],
+      "officialSource": {
+        "url": null,
+        "document": "DEMO record - simulated for demonstration only",
+        "lastVerified": "2026-09-22",
+        "dataStatus": "DEMO"
+      },
+      "dataStatus": "DEMO",
+      "distanceKm": null,
+      "fundHealth": {
+        "available": false,
+        "message": "Partner-level fund-health information is not available in the current verified dataset."
+      }
+    },
+    {
+      "id": "demo-psb-cbe",
+      "name": "DEMO - Public Sector Bank Branch (Coimbatore)",
+      "type": "PSB",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "address": "DEMO address (not a real location)",
+      "latitude": 10.9985,
+      "longitude": 76.9629,
+      "supportedSchemes": [
+        "educational-loan-scheme"
+      ],
+      "officialSource": {
+        "url": null,
+        "document": "DEMO record - simulated for demonstration only",
+        "lastVerified": "2026-09-22",
+        "dataStatus": "DEMO"
+      },
+      "dataStatus": "DEMO",
+      "distanceKm": null,
+      "fundHealth": {
+        "available": false,
+        "message": "Partner-level fund-health information is not available in the current verified dataset."
+      }
+    },
+    {
+      "id": "demo-sca-cbe",
+      "name": "DEMO - SCA District Office (Coimbatore)",
+      "type": "SCA",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "address": "DEMO address (not a real location) - illustrates a district-level office; TAHDCO's HQ is the VERIFIED record",
+      "latitude": 11.0168,
+      "longitude": 76.9558,
+      "supportedSchemes": [
+        "micro-finance-scheme",
+        "term-loan",
+        "educational-loan-scheme"
+      ],
+      "officialSource": {
+        "url": null,
+        "document": "DEMO record - simulated for demonstration only",
+        "lastVerified": "2026-09-22",
+        "dataStatus": "DEMO"
+      },
+      "dataStatus": "DEMO",
+      "distanceKm": null,
+      "fundHealth": {
+        "available": false,
+        "message": "Partner-level fund-health information is not available in the current verified dataset."
+      }
+    },
+    {
+      "id": "demo-sfb-mdu",
+      "name": "DEMO - Small Finance Bank Branch (Madurai)",
+      "type": "Small Finance Bank",
+      "state": "Tamil Nadu",
+      "district": "Madurai",
+      "address": "DEMO address (not a real location)",
+      "latitude": 9.9252,
+      "longitude": 78.1198,
+      "supportedSchemes": [
+        "udyam-nidhi-yojana"
+      ],
+      "officialSource": {
+        "url": null,
+        "document": "DEMO record - simulated for demonstration only",
+        "lastVerified": "2026-09-22",
+        "dataStatus": "DEMO"
+      },
+      "dataStatus": "DEMO",
+      "distanceKm": null,
+      "fundHealth": {
+        "available": false,
+        "message": "Partner-level fund-health information is not available in the current verified dataset."
+      }
+    },
+    {
+      "id": "syndicate-bank-tn-2020",
+      "name": "Syndicate Bank (Tamil Nadu channel - amalgamated into Canara Bank, 1 Apr 2020)",
+      "type": "PSB",
+      "state": "Tamil Nadu",
+      "district": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "supportedSchemes": [
+        "micro-finance-scheme",
+        "term-loan"
+      ],
+      "officialSource": {
+        "url": "https://socialjustice.gov.in/public/ckeditor/upload/Summary%20Report-Evaluation%20of%20NSFDC_1648795113.pdf",
+        "document": "MoSJE / NSFDC evaluation study (Centre for Market Research & Social Development, 2020) - Executive Summary",
+        "lastVerified": "2020-01-01",
+        "dataStatus": "VERIFIED"
+      },
+      "dataStatus": "VERIFIED",
+      "distanceKm": null,
+      "fundHealth": {
+        "available": false,
+        "message": "Partner-level fund-health information is not available in the current verified dataset."
+      }
+    },
+    {
+      "id": "tahdco-tn-hq",
+      "name": "Tamil Nadu Adi Dravidar Housing and Development Corporation Ltd. (TAHDCO)",
+      "type": "SCA",
+      "state": "Tamil Nadu",
+      "district": "Chennai",
+      "address": "No. 31, Cenotaph Road, 2nd Lane, Teynampet, Chennai - 600018, Tamil Nadu",
+      "latitude": 13.0407,
+      "longitude": 80.2496,
+      "supportedSchemes": [
+        "micro-finance-scheme",
+        "term-loan",
+        "aajeevika-micro-finance-yojana",
+        "udyam-nidhi-yojana",
+        "educational-loan-scheme"
+      ],
+      "officialSource": {
+        "url": "https://tahdco.com/contact-us.php",
+        "document": "TAHDCO official contact page; independently confirmed by Tamil Nadu district-government (.nic.in) portals as the NSFDC State Channelizing Agency for Tamil Nadu",
+        "lastVerified": "2026-09-22",
+        "dataStatus": "VERIFIED"
+      },
+      "dataStatus": "VERIFIED",
+      "distanceKm": null,
+      "fundHealth": {
+        "available": false,
+        "message": "Partner-level fund-health information is not available in the current verified dataset."
+      }
+    }
+  ],
+  "count": 7,
+  "notice": "NSFDC's own evaluation report (2020) states the network comprised 37 State Channelizing Agencies and 55 other Channelizing Agencies (92 total) nationally at that time; NSFDC does not publish a current, structured, geocoded directory, so per-partner records beyond the ones above are not available as verified data. Some records are DEMO data for demonstration only and are not real channel partners."
+}

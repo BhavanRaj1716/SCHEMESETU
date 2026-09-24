@@ -1,0 +1,2 @@
+# Real semantic embeddings (multilingual: English/Tamil/Hindi). Large download (PyTorch).
+sentence-transformers>=3.0

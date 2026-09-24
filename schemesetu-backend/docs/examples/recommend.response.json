@@ -1,0 +1,614 @@
+{
+  "requestId": "00000000-0000-4000-8000-000000000000",
+  "dataStatus": "VERIFIED",
+  "schemes": [
+    {
+      "scheme": {
+        "id": "udyam-nidhi-yojana",
+        "schemeCode": "NSFDC-UNY",
+        "name": "Udyam Nidhi Yojana (UNY)",
+        "purpose": "Loans for small/micro activities costing up to ₹5.00 lakh, through cooperative societies/banks and small finance banks.",
+        "category": "income_generating",
+        "beneficiaryCategory": [
+          "SC"
+        ],
+        "financialDetails": {
+          "minProjectCost": null,
+          "maxProjectCost": 500000.0,
+          "minLoanAmount": null,
+          "maxLoanAmount": 450000.0,
+          "coveragePercentage": 90.0,
+          "interestRate": null,
+          "interestRateText": "Beneficiary pays 13% p.a. via Cooperative Banks/Societies or 15% p.a. via Small Finance Banks (NSFDC charges 5% p.a.).",
+          "interestRateOptions": [
+            {
+              "label": "Cooperative Banks/Societies",
+              "rate": 13.0
+            },
+            {
+              "label": "Small Finance Banks",
+              "rate": 15.0
+            }
+          ],
+          "repaymentPeriod": "Quarterly or half-yearly instalments within a maximum of 5 years, including the moratorium.",
+          "maxRepaymentMonths": 60,
+          "moratorium": "3 months (included in the repayment period)",
+          "moratoriumMonths": 3
+        },
+        "officialSource": {
+          "organization": "NSFDC",
+          "url": "https://nsfdc.nic.in/scheme",
+          "document": "NSFDC loan/credit schemes page (nsfdc.nic.in/scheme)",
+          "lastVerified": "2026-09-22",
+          "dataUpdated": "2026-09-21",
+          "dataStatus": "VERIFIED"
+        },
+        "officialApplicationUrl": "https://pmsuraj.dosje.gov.in/",
+        "dataStatus": "VERIFIED"
+      },
+      "relevanceReason": "Retrieved because the stated requirement is semantically related to Udyam Nidhi Yojana (UNY)'s documented purpose, and there is a purpose match, financial range match, beneficiary category match and state applicability.",
+      "relevanceFactors": [
+        {
+          "factor": "Semantic similarity",
+          "matched": true,
+          "detail": "The requirement text is semantically close to the scheme's documented purpose and activities."
+        },
+        {
+          "factor": "Purpose match",
+          "matched": true,
+          "detail": "The stated requirement concerns income-generating activities, which is this scheme's documented focus."
+        },
+        {
+          "factor": "Financial range match",
+          "matched": true,
+          "detail": "The requested amounts fall within the scheme's documented financial range (project cost up to ₹5,00,000)."
+        },
+        {
+          "factor": "Beneficiary category match",
+          "matched": true,
+          "detail": "The scheme is for SC beneficiaries; provided category is SC."
+        },
+        {
+          "factor": "State applicability",
+          "matched": true,
+          "detail": "No state restriction is stated for this scheme; availability depends on the channelizing agency in your state."
+        }
+      ],
+      "semanticSimilarity": 0.0998,
+      "eligibilityChecks": [
+        {
+          "criterion": "Beneficiary category",
+          "status": "matched",
+          "explanation": "Provided beneficiary category (SC) matches the currently verified requirement (SC).",
+          "sourceUrl": "https://nsfdc.nic.in/eligibility-requirements",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Annual family income",
+          "status": "matched",
+          "explanation": "Provided annual family income (₹2,50,000) is within the currently verified requirement (at most ₹5,00,000).",
+          "sourceUrl": "https://nsfdc.nic.in/eligibility-requirements",
+          "effectiveFrom": "2026-01-07",
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Scheduled Caste status verification",
+          "status": "needs_verification",
+          "explanation": "Scheduled Caste status and all eligibility criteria are verified by the authorised channelizing agency (SCA/CA), which is solely responsible for verification; NSFDC may re-verify.",
+          "sourceUrl": "https://nsfdc.nic.in/eligibility-requirements",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Purpose of financing",
+          "status": "matched",
+          "explanation": "The stated purpose appears to concern income-generating activities, which this scheme covers.",
+          "sourceUrl": "https://nsfdc.nic.in/scheme",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Loan up to 90% of project cost",
+          "status": "matched",
+          "explanation": "The scheme finances up to 90% of project cost: 90% of ₹3,00,000 is ₹2,70,000, so the requested loan of ₹2,50,000 is within that limit.",
+          "sourceUrl": "https://nsfdc.nic.in/scheme",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "State applicability",
+          "status": "matched",
+          "explanation": "No state restriction is stated in the scheme's official description. Delivery is through channelizing agencies, so confirm an authorised partner is available in Tamil Nadu.",
+          "sourceUrl": "https://nsfdc.nic.in/scheme",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Project cost",
+          "status": "matched",
+          "explanation": "Provided project cost (₹3,00,000) is within the currently verified requirement (at most ₹5,00,000).",
+          "sourceUrl": "https://nsfdc.nic.in/scheme",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Loan amount",
+          "status": "matched",
+          "explanation": "Provided loan amount (₹2,50,000) is within the currently verified requirement (at most ₹4,50,000).",
+          "sourceUrl": "https://nsfdc.nic.in/scheme",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        }
+      ],
+      "eligibilityOutcome": "NO_MISMATCH_FOUND",
+      "eligibilityCounts": {
+        "matched": 7,
+        "notMatched": 0,
+        "needsVerification": 1
+      },
+      "financialFit": {
+        "coveragePercentage": 90.0,
+        "projectCost": 300000.0,
+        "maxLoanByCoverage": 270000.0,
+        "loanRequired": 250000.0,
+        "withinCoverage": true,
+        "withinSchemeLoanLimit": true
+      },
+      "requiresVerification": true,
+      "officialApplicationUrl": "https://pmsuraj.dosje.gov.in/"
+    },
+    {
+      "scheme": {
+        "id": "term-loan",
+        "schemeCode": "NSFDC-TL",
+        "name": "Term Loan",
+        "purpose": "Term loans for income-generating units costing more than ₹1.40 lakh and up to ₹50 lakh.",
+        "category": "income_generating",
+        "beneficiaryCategory": [
+          "SC"
+        ],
+        "financialDetails": {
+          "minProjectCost": 140000.0,
+          "maxProjectCost": 5000000.0,
+          "minLoanAmount": 125000.0,
+          "maxLoanAmount": 4500000.0,
+          "coveragePercentage": 90.0,
+          "interestRate": 8.0,
+          "interestRateText": "Beneficiary pays 8% p.a. (NSFDC charges 4% p.a. from the SCAs/CAs).",
+          "interestRateOptions": null,
+          "repaymentPeriod": "Quarterly instalments within 7 years, including the moratorium.",
+          "maxRepaymentMonths": 84,
+          "moratorium": "6 months (12 months for plantation and construction activities)",
+          "moratoriumMonths": 6
+        },
+        "officialSource": {
+          "organization": "NSFDC",
+          "url": "https://nsfdc.nic.in/scheme",
+          "document": "NSFDC loan/credit schemes page (nsfdc.nic.in/scheme)",
+          "lastVerified": "2026-09-22",
+          "dataUpdated": "2026-09-21",
+          "dataStatus": "VERIFIED"
+        },
+        "officialApplicationUrl": "https://pmsuraj.dosje.gov.in/",
+        "dataStatus": "VERIFIED"
+      },
+      "relevanceReason": "Retrieved because the stated requirement is semantically related to Term Loan's documented purpose, and there is a purpose match, financial range match, beneficiary category match and state applicability.",
+      "relevanceFactors": [
+        {
+          "factor": "Semantic similarity",
+          "matched": true,
+          "detail": "The requirement text is semantically close to the scheme's documented purpose and activities."
+        },
+        {
+          "factor": "Purpose match",
+          "matched": true,
+          "detail": "The stated requirement concerns income-generating activities, which is this scheme's documented focus."
+        },
+        {
+          "factor": "Financial range match",
+          "matched": true,
+          "detail": "The requested amounts fall within the scheme's documented financial range (project cost up to ₹50,00,000)."
+        },
+        {
+          "factor": "Beneficiary category match",
+          "matched": true,
+          "detail": "The scheme is for SC beneficiaries; provided category is SC."
+        },
+        {
+          "factor": "State applicability",
+          "matched": true,
+          "detail": "No state restriction is stated for this scheme; availability depends on the channelizing agency in your state."
+        }
+      ],
+      "semanticSimilarity": 0.0996,
+      "eligibilityChecks": [
+        {
+          "criterion": "Beneficiary category",
+          "status": "matched",
+          "explanation": "Provided beneficiary category (SC) matches the currently verified requirement (SC).",
+          "sourceUrl": "https://nsfdc.nic.in/eligibility-requirements",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Annual family income",
+          "status": "matched",
+          "explanation": "Provided annual family income (₹2,50,000) is within the currently verified requirement (at most ₹5,00,000).",
+          "sourceUrl": "https://nsfdc.nic.in/eligibility-requirements",
+          "effectiveFrom": "2026-01-07",
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Scheduled Caste status verification",
+          "status": "needs_verification",
+          "explanation": "Scheduled Caste status and all eligibility criteria are verified by the authorised channelizing agency (SCA/CA), which is solely responsible for verification; NSFDC may re-verify.",
+          "sourceUrl": "https://nsfdc.nic.in/eligibility-requirements",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Purpose of financing",
+          "status": "matched",
+          "explanation": "The stated purpose appears to concern income-generating activities, which this scheme covers.",
+          "sourceUrl": "https://nsfdc.nic.in/scheme",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Loan up to 90% of project cost",
+          "status": "matched",
+          "explanation": "The scheme finances up to 90% of project cost: 90% of ₹3,00,000 is ₹2,70,000, so the requested loan of ₹2,50,000 is within that limit.",
+          "sourceUrl": "https://nsfdc.nic.in/scheme",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "State applicability",
+          "status": "matched",
+          "explanation": "No state restriction is stated in the scheme's official description. Delivery is through channelizing agencies, so confirm an authorised partner is available in Tamil Nadu.",
+          "sourceUrl": "https://nsfdc.nic.in/scheme",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Project cost",
+          "status": "matched",
+          "explanation": "Provided project cost (₹3,00,000) is within the scheme's documented range (above ₹1,40,000 and up to ₹50,00,000).",
+          "sourceUrl": "https://nsfdc.nic.in/scheme",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Loan amount",
+          "status": "matched",
+          "explanation": "Provided loan amount (₹2,50,000) is within the scheme's documented range (above ₹1,25,000 and up to ₹45,00,000).",
+          "sourceUrl": "https://nsfdc.nic.in/scheme",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        }
+      ],
+      "eligibilityOutcome": "NO_MISMATCH_FOUND",
+      "eligibilityCounts": {
+        "matched": 7,
+        "notMatched": 0,
+        "needsVerification": 1
+      },
+      "financialFit": {
+        "coveragePercentage": 90.0,
+        "projectCost": 300000.0,
+        "maxLoanByCoverage": 270000.0,
+        "loanRequired": 250000.0,
+        "withinCoverage": true,
+        "withinSchemeLoanLimit": true
+      },
+      "requiresVerification": true,
+      "officialApplicationUrl": "https://pmsuraj.dosje.gov.in/"
+    },
+    {
+      "scheme": {
+        "id": "aajeevika-micro-finance-yojana",
+        "schemeCode": "NSFDC-AMY",
+        "name": "Aajeevika Micro-Finance Yojana",
+        "purpose": "Prompt, need-based micro finance for small/micro business activities through selected NBFC-MFIs.",
+        "category": "income_generating",
+        "beneficiaryCategory": [
+          "SC"
+        ],
+        "financialDetails": {
+          "minProjectCost": null,
+          "maxProjectCost": 140000.0,
+          "minLoanAmount": null,
+          "maxLoanAmount": 125000.0,
+          "coveragePercentage": 90.0,
+          "interestRate": 15.0,
+          "interestRateText": "Beneficiary pays 15% p.a. (NSFDC charges 5% p.a. from the NBFC-MFIs).",
+          "interestRateOptions": null,
+          "repaymentPeriod": "Quarterly instalments of up to 3 years from the date of each disbursement, including the moratorium.",
+          "maxRepaymentMonths": 36,
+          "moratorium": "3 months (included in the repayment period)",
+          "moratoriumMonths": 3
+        },
+        "officialSource": {
+          "organization": "NSFDC",
+          "url": "https://nsfdc.nic.in/scheme",
+          "document": "NSFDC loan/credit schemes page (nsfdc.nic.in/scheme)",
+          "lastVerified": "2026-09-22",
+          "dataUpdated": "2026-09-21",
+          "dataStatus": "VERIFIED"
+        },
+        "officialApplicationUrl": "https://pmsuraj.dosje.gov.in/",
+        "dataStatus": "VERIFIED"
+      },
+      "relevanceReason": "Retrieved because the stated requirement is semantically related to Aajeevika Micro-Finance Yojana's documented purpose, and there is a purpose match, beneficiary category match and state applicability. Not matched: financial range match (see eligibility checks).",
+      "relevanceFactors": [
+        {
+          "factor": "Semantic similarity",
+          "matched": true,
+          "detail": "The requirement text is semantically close to the scheme's documented purpose and activities."
+        },
+        {
+          "factor": "Purpose match",
+          "matched": true,
+          "detail": "The stated requirement concerns income-generating activities, which is this scheme's documented focus."
+        },
+        {
+          "factor": "Financial range match",
+          "matched": false,
+          "detail": "The requested amounts fall outside the scheme's documented financial range (project cost up to ₹1,40,000)."
+        },
+        {
+          "factor": "Beneficiary category match",
+          "matched": true,
+          "detail": "The scheme is for SC beneficiaries; provided category is SC."
+        },
+        {
+          "factor": "State applicability",
+          "matched": true,
+          "detail": "No state restriction is stated for this scheme; availability depends on the channelizing agency in your state."
+        }
+      ],
+      "semanticSimilarity": 0.1403,
+      "eligibilityChecks": [
+        {
+          "criterion": "Beneficiary category",
+          "status": "matched",
+          "explanation": "Provided beneficiary category (SC) matches the currently verified requirement (SC).",
+          "sourceUrl": "https://nsfdc.nic.in/eligibility-requirements",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Annual family income",
+          "status": "matched",
+          "explanation": "Provided annual family income (₹2,50,000) is within the currently verified requirement (at most ₹5,00,000).",
+          "sourceUrl": "https://nsfdc.nic.in/eligibility-requirements",
+          "effectiveFrom": "2026-01-07",
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Scheduled Caste status verification",
+          "status": "needs_verification",
+          "explanation": "Scheduled Caste status and all eligibility criteria are verified by the authorised channelizing agency (SCA/CA), which is solely responsible for verification; NSFDC may re-verify.",
+          "sourceUrl": "https://nsfdc.nic.in/eligibility-requirements",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Purpose of financing",
+          "status": "matched",
+          "explanation": "The stated purpose appears to concern income-generating activities, which this scheme covers.",
+          "sourceUrl": "https://nsfdc.nic.in/scheme",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Loan up to 90% of project cost",
+          "status": "matched",
+          "explanation": "The scheme finances up to 90% of project cost: 90% of ₹3,00,000 is ₹2,70,000, so the requested loan of ₹2,50,000 is within that limit.",
+          "sourceUrl": "https://nsfdc.nic.in/scheme",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "State applicability",
+          "status": "matched",
+          "explanation": "No state restriction is stated in the scheme's official description. Delivery is through channelizing agencies, so confirm an authorised partner is available in Tamil Nadu.",
+          "sourceUrl": "https://nsfdc.nic.in/scheme",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Project cost",
+          "status": "not_matched",
+          "explanation": "Provided project cost (₹3,00,000) is outside the currently verified requirement (at most ₹1,40,000).",
+          "sourceUrl": "https://nsfdc.nic.in/scheme",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Loan amount",
+          "status": "not_matched",
+          "explanation": "Provided loan amount (₹2,50,000) is outside the currently verified requirement (at most ₹1,25,000).",
+          "sourceUrl": "https://nsfdc.nic.in/scheme",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        }
+      ],
+      "eligibilityOutcome": "MISMATCH_FOUND",
+      "eligibilityCounts": {
+        "matched": 5,
+        "notMatched": 2,
+        "needsVerification": 1
+      },
+      "financialFit": {
+        "coveragePercentage": 90.0,
+        "projectCost": 300000.0,
+        "maxLoanByCoverage": 270000.0,
+        "loanRequired": 250000.0,
+        "withinCoverage": true,
+        "withinSchemeLoanLimit": false
+      },
+      "requiresVerification": true,
+      "officialApplicationUrl": "https://pmsuraj.dosje.gov.in/"
+    },
+    {
+      "scheme": {
+        "id": "micro-finance-scheme",
+        "schemeCode": "NSFDC-MFS",
+        "name": "Micro Finance Scheme (MFS)",
+        "purpose": "Micro credit finance for small income-generating units costing up to ₹1.40 lakh.",
+        "category": "income_generating",
+        "beneficiaryCategory": [
+          "SC"
+        ],
+        "financialDetails": {
+          "minProjectCost": null,
+          "maxProjectCost": 140000.0,
+          "minLoanAmount": null,
+          "maxLoanAmount": 125000.0,
+          "coveragePercentage": 90.0,
+          "interestRate": 6.5,
+          "interestRateText": "Beneficiary pays 6.5% p.a. (NSFDC charges 2.5% p.a. from the SCAs/CAs).",
+          "interestRateOptions": null,
+          "repaymentPeriod": "Quarterly instalments within a maximum of 3 years from the date of disbursement, including the moratorium.",
+          "maxRepaymentMonths": 36,
+          "moratorium": "3 months (included in the repayment period)",
+          "moratoriumMonths": 3
+        },
+        "officialSource": {
+          "organization": "NSFDC",
+          "url": "https://nsfdc.nic.in/scheme",
+          "document": "NSFDC loan/credit schemes page (nsfdc.nic.in/scheme)",
+          "lastVerified": "2026-09-22",
+          "dataUpdated": "2026-09-21",
+          "dataStatus": "VERIFIED"
+        },
+        "officialApplicationUrl": "https://pmsuraj.dosje.gov.in/",
+        "dataStatus": "VERIFIED"
+      },
+      "relevanceReason": "Retrieved because the stated requirement is semantically related to Micro Finance Scheme (MFS)'s documented purpose, and there is a purpose match, beneficiary category match and state applicability. Not matched: financial range match (see eligibility checks).",
+      "relevanceFactors": [
+        {
+          "factor": "Semantic similarity",
+          "matched": true,
+          "detail": "The requirement text is semantically close to the scheme's documented purpose and activities."
+        },
+        {
+          "factor": "Purpose match",
+          "matched": true,
+          "detail": "The stated requirement concerns income-generating activities, which is this scheme's documented focus."
+        },
+        {
+          "factor": "Financial range match",
+          "matched": false,
+          "detail": "The requested amounts fall outside the scheme's documented financial range (project cost up to ₹1,40,000)."
+        },
+        {
+          "factor": "Beneficiary category match",
+          "matched": true,
+          "detail": "The scheme is for SC beneficiaries; provided category is SC."
+        },
+        {
+          "factor": "State applicability",
+          "matched": true,
+          "detail": "No state restriction is stated for this scheme; availability depends on the channelizing agency in your state."
+        }
+      ],
+      "semanticSimilarity": 0.0986,
+      "eligibilityChecks": [
+        {
+          "criterion": "Beneficiary category",
+          "status": "matched",
+          "explanation": "Provided beneficiary category (SC) matches the currently verified requirement (SC).",
+          "sourceUrl": "https://nsfdc.nic.in/eligibility-requirements",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Annual family income",
+          "status": "matched",
+          "explanation": "Provided annual family income (₹2,50,000) is within the currently verified requirement (at most ₹5,00,000).",
+          "sourceUrl": "https://nsfdc.nic.in/eligibility-requirements",
+          "effectiveFrom": "2026-01-07",
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Scheduled Caste status verification",
+          "status": "needs_verification",
+          "explanation": "Scheduled Caste status and all eligibility criteria are verified by the authorised channelizing agency (SCA/CA), which is solely responsible for verification; NSFDC may re-verify.",
+          "sourceUrl": "https://nsfdc.nic.in/eligibility-requirements",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Purpose of financing",
+          "status": "matched",
+          "explanation": "The stated purpose appears to concern income-generating activities, which this scheme covers.",
+          "sourceUrl": "https://nsfdc.nic.in/scheme",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Loan up to 90% of project cost",
+          "status": "matched",
+          "explanation": "The scheme finances up to 90% of project cost: 90% of ₹3,00,000 is ₹2,70,000, so the requested loan of ₹2,50,000 is within that limit.",
+          "sourceUrl": "https://nsfdc.nic.in/scheme",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "State applicability",
+          "status": "matched",
+          "explanation": "No state restriction is stated in the scheme's official description. Delivery is through channelizing agencies, so confirm an authorised partner is available in Tamil Nadu.",
+          "sourceUrl": "https://nsfdc.nic.in/scheme",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Project cost",
+          "status": "not_matched",
+          "explanation": "Provided project cost (₹3,00,000) is outside the currently verified requirement (at most ₹1,40,000).",
+          "sourceUrl": "https://nsfdc.nic.in/scheme",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        },
+        {
+          "criterion": "Loan amount",
+          "status": "not_matched",
+          "explanation": "Provided loan amount (₹2,50,000) is outside the currently verified requirement (at most ₹1,25,000).",
+          "sourceUrl": "https://nsfdc.nic.in/scheme",
+          "effectiveFrom": null,
+          "lastVerified": "2026-09-22"
+        }
+      ],
+      "eligibilityOutcome": "MISMATCH_FOUND",
+      "eligibilityCounts": {
+        "matched": 5,
+        "notMatched": 2,
+        "needsVerification": 1
+      },
+      "financialFit": {
+        "coveragePercentage": 90.0,
+        "projectCost": 300000.0,
+        "maxLoanByCoverage": 270000.0,
+        "loanRequired": 250000.0,
+        "withinCoverage": true,
+        "withinSchemeLoanLimit": false
+      },
+      "requiresVerification": true,
+      "officialApplicationUrl": "https://pmsuraj.dosje.gov.in/"
+    }
+  ],
+  "retrieval": {
+    "normalizedQuery": "dairy business",
+    "detectedLanguage": "en",
+    "embeddingProvider": "hashing",
+    "embeddingModel": "hashing-bow-384",
+    "candidatesConsidered": 4,
+    "minSimilarity": 0.05
+  },
+  "officialApplicationUrl": "https://pmsuraj.dosje.gov.in/",
+  "disclaimer": "Information only. SchemeSetu does not approve loans or predict approval. Final eligibility is decided by the authorised channelizing agency / NSFDC. Apply through the official PM-SURAJ portal.",
+  "generatedAt": "2026-09-22T10:00:00Z"
+}

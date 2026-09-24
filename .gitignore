@@ -1,0 +1,30 @@
+# Root .gitignore
+
+# Virtual Environment & Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.sqlite
+*.db
+
+# Node & Next.js
+node_modules/
+.next/
+out/
+build/
+*.tsbuildinfo
+
+# Environment & Credentials
+.env
+.env.local
+.env.*
+!.env.example
+!.env.local.example
+firebase-credentials*.json
+service-account*.json
+
+# OS & Logs
+.DS_Store
+*.log
