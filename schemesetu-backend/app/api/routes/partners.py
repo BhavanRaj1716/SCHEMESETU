@@ -1,8 +1,10 @@
 from fastapi import APIRouter, Depends, Query
+from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
 from app.api.errors import AppError
 from app.db.database import get_db
+from app.db.models import ChannelPartner
 from app.schemas.common import ErrorResponse
 from app.schemas.partner import PartnerListResponse, PartnerOut
 from app.ingestion.nsfdc.verified_partners import NATIONAL_PARTNER_COUNT_NOTE
@@ -29,6 +31,37 @@ def list_partners(
     if any(p.data_status.value == "DEMO" for p in partners):
         notices.append("Some records are DEMO data for demonstration only and are not real channel partners.")
     return PartnerListResponse(partners=partners, count=len(partners), notice=" ".join(notices))
+
+
+@router.get("/states", response_model=list[str], summary="List available partner states")
+def list_partner_states(db: Session = Depends(get_db)):
+    q = (
+        select(ChannelPartner.state)
+        .where(ChannelPartner.state.is_not(None))
+        .where(func.trim(ChannelPartner.state) != "")
+        .distinct()
+        .order_by(func.lower(ChannelPartner.state), ChannelPartner.state)
+    )
+    return db.scalars(q).all()
+
+
+@router.get("/districts", response_model=list[str], summary="List available partner districts")
+def list_partner_districts(
+    state: str | None = Query(None, description="Optional state name filter"),
+    db: Session = Depends(get_db),
+):
+    if state is not None and not state.strip():
+        raise AppError("INVALID_REQUEST", "state must not be empty when provided", 422)
+
+    q = (
+        select(ChannelPartner.district)
+        .where(ChannelPartner.district.is_not(None))
+        .where(func.trim(ChannelPartner.district) != "")
+    )
+    if state:
+        q = q.where(func.lower(ChannelPartner.state) == state.strip().lower())
+    q = q.distinct().order_by(func.lower(ChannelPartner.district), ChannelPartner.district)
+    return db.scalars(q).all()
 
 
 @router.get("/{partner_id}", response_model=PartnerOut, responses={404: {"model": ErrorResponse}}, summary="Partner detail")

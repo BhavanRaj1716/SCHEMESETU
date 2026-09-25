@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     database_url: str = "sqlite:///./schemesetu.db"  # zero-setup local default; set a postgresql+psycopg:// URL for pgvector/production
 
     embedding_provider: str = "sentence-transformers"  # or "hashing"
-    embedding_model: str = r"E:\SIH PROTOTPYE\schemesetu_e5_final"
+    embedding_model: str = "intfloat/multilingual-e5-small"
     embedding_dim: int = 384
     semantic_top_k: int = Field(5, ge=1, le=50)
     semantic_min_similarity: float = Field(0.05, ge=-1.0, le=1.0)

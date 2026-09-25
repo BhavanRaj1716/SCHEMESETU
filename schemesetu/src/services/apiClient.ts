@@ -23,6 +23,21 @@ interface RequestOptions<TBody = unknown> {
   params?: Record<string, string | number | boolean | undefined | null>;
 }
 
+interface ErrorEnvelope {
+  error?: {
+    code?: string;
+    message?: string;
+    details?: unknown;
+  };
+}
+
+type AuthTokenProvider = () => string | null | undefined;
+let authTokenProvider: AuthTokenProvider | null = null;
+
+export function setAuthTokenProvider(provider: AuthTokenProvider | null): void {
+  authTokenProvider = provider;
+}
+
 export class ApiError extends Error {
   constructor(
     public readonly status: number,
@@ -49,6 +64,7 @@ export async function apiRequest<TResponse>(
   }
 
   const { method = 'GET', body, params } = options;
+  const token = authTokenProvider?.();
 
   let url = `${API_BASE}${path}`;
   if (params) {
@@ -59,15 +75,25 @@ export async function apiRequest<TResponse>(
     if (qs) url += `?${qs}`;
   }
 
+  const headers: Record<string, string> = { 'Content-Type': 'application/json' };
+  if (token) headers.Authorization = 'Bearer ' + token;
+
   const res = await fetch(url, {
     method,
-    headers: { 'Content-Type': 'application/json' },
+    headers,
     body: body !== undefined ? JSON.stringify(body) : undefined,
   });
 
   if (!res.ok) {
-    const text = await res.text().catch(() => res.statusText);
-    throw new ApiError(res.status, text);
+    const text = await res.text().catch(() => '');
+    let message = text || res.statusText || `Request failed with status ${res.status}`;
+    try {
+      const parsed = JSON.parse(text) as ErrorEnvelope;
+      if (parsed?.error?.message) message = parsed.error.message;
+    } catch {
+      // keep fallback message
+    }
+    throw new ApiError(res.status, message);
   }
 
   return res.json() as Promise<TResponse>;

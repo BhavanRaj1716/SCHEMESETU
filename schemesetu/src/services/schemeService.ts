@@ -15,12 +15,17 @@ import { VERIFIED_SCHEMES } from './mockData/schemes';
 const MOCK_DELAY_MS = 300;
 const delay = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
 
+interface BackendSchemeListResponse {
+  schemes: Scheme[];
+  count: number;
+}
+
 export async function getAllSchemes(): Promise<Scheme[]> {
   if (IS_MOCK_MODE) {
     await delay(MOCK_DELAY_MS);
     return VERIFIED_SCHEMES;
   }
-  return apiRequest<Scheme[]>('/api/schemes');
+  return (await apiRequest<BackendSchemeListResponse>('/api/schemes')).schemes;
 }
 
 export async function getSchemeById(id: string): Promise<Scheme | null> {
@@ -40,5 +45,7 @@ export async function getSchemesByCategory(category: string): Promise<Scheme[]> 
     await delay(MOCK_DELAY_MS);
     return VERIFIED_SCHEMES.filter((s) => s.category === category);
   }
-  return apiRequest<Scheme[]>('/api/schemes', { params: { category } });
+  return (await apiRequest<BackendSchemeListResponse>('/api/schemes', {
+    params: { category },
+  })).schemes;
 }
