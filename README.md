@@ -1,4 +1,4 @@
-# 🇮🇳 SchemeSetu (स्कीम सेतु / திட்ட சேது)
+# 🇮🇳 SchemeSetu 
 ### *Bridging Citizens to NSFDC Concessional Schemes & PM-SURAJ Guidance*
 
 [![Smart India Hackathon](https://img.shields.io/badge/SIH-2026%20Prototype-orange.svg)](https://www.sih.gov.in/)
