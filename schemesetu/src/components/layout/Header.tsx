@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { APP_CONFIG } from '@/config/app';
 import { Menu, X, ExternalLink } from 'lucide-react';
+import { LanguageSelector } from '@/components/layout/LanguageSelector';
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -27,7 +28,7 @@ export function Header() {
             <div className="w-8 h-8 rounded-md bg-[#152B4D] flex items-center justify-center shrink-0">
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
                 <circle cx="9" cy="9" r="6.5" stroke="#F7F7F5" strokeWidth="1.2" fill="none" />
-                <circle cx="9" cy="9" r="2" fill="#FF9933" />
+                <circle cx="9" cy="2" fill="#FF9933" />
                 {[0,45,90,135,180,225,270,315].map((deg, i) => {
                   const rad = (deg * Math.PI) / 180;
                   const x1 = 9 + 3.2 * Math.cos(rad);
@@ -58,8 +59,8 @@ export function Header() {
                   href={item.href}
                   className={`px-3 py-1.5 text-sm rounded transition-colors ${
                     active
-                      ? 'text-[#152B4D] font-semibold bg-[#152B4D]/8'
-                      : 'text-gray-600 hover:text-[#152B4D] hover:bg-gray-100'
+                      ? 'text-[#152B4D] font-semibold bg-[#152B4D]/5'
+                      : 'text-gray-600 hover:text-[#152B4D] hover:bg-gray-50'
                   }`}
                 >
                   {item.label}
@@ -71,19 +72,22 @@ export function Header() {
             })}
           </nav>
 
-          {/* Right side */}
-          <div className="flex items-center gap-2">
+          {/* Right side actions */}
+          <div className="flex items-center gap-2 sm:gap-2.5">
+            {/* In-Page Government Language Selector */}
+            <LanguageSelector />
+
             <a
               href={APP_CONFIG.urls.pmSuraj}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-white bg-[#138808] hover:bg-[#0f6b06] rounded transition-colors"
+              className="hidden sm:inline-flex items-center gap-1.5 h-8 px-3 text-xs font-semibold text-white bg-[#138808] hover:bg-[#0f6b06] rounded shadow-2xs transition-colors"
             >
-              PM-SURAJ Portal
-              <ExternalLink size={11} />
+              <span>PM-SURAJ</span>
+              <ExternalLink size={11} className="shrink-0" />
             </a>
 
-            <span className="hidden md:inline-flex items-center px-2 py-0.5 text-[10px] font-medium text-[#FF9933] border border-[#FF9933]/30 rounded bg-[#FF9933]/5">
+            <span className="hidden md:inline-flex items-center h-8 px-2.5 text-[11px] font-semibold text-[#FF9933] border border-[#FF9933]/40 rounded bg-[#FF9933]/5 tracking-wide">
               SIH 2026
             </span>
 
@@ -127,6 +131,10 @@ export function Header() {
                 </Link>
               );
             })}
+
+            {/* Mobile Language Selector */}
+            <LanguageSelector isMobile={true} />
+
             <div className="pt-2 pb-1 px-3">
               <a
                 href={APP_CONFIG.urls.pmSuraj}

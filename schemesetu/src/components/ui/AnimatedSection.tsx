@@ -1,7 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { ReactNode } from 'react';
+import { useEffect, useRef, ReactNode } from 'react';
 
 interface AnimatedSectionProps {
   children: ReactNode;
@@ -16,31 +15,42 @@ export function AnimatedSection({
   delay = 0,
   direction = 'up',
 }: AnimatedSectionProps) {
-  const getInitialPosition = () => {
-    switch (direction) {
-      case 'up':
-        return { opacity: 0, y: 30 };
-      case 'down':
-        return { opacity: 0, y: -30 };
-      case 'left':
-        return { opacity: 0, x: 30 };
-      case 'right':
-        return { opacity: 0, x: -30 };
-      case 'none':
-      default:
-        return { opacity: 0 };
-    }
-  };
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const dirMap = {
+      up: 'translateY(30px)',
+      down: 'translateY(-30px)',
+      left: 'translateX(30px)',
+      right: 'translateX(-30px)',
+      none: 'translateY(0)',
+    };
+
+    el.style.opacity = '0';
+    el.style.transform = dirMap[direction];
+    el.style.transition = `opacity 0.6s cubic-bezier(0.21,0.47,0.32,0.98) ${delay}s, transform 0.6s cubic-bezier(0.21,0.47,0.32,0.98) ${delay}s`;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0) translateX(0)';
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '-60px' }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [delay, direction]);
 
   return (
-    <motion.div
-      initial={getInitialPosition()}
-      whileInView={{ opacity: 1, x: 0, y: 0 }}
-      viewport={{ once: true, margin: '-60px' }}
-      transition={{ duration: 0.6, delay, ease: [0.21, 0.47, 0.32, 0.98] }}
-      className={className}
-    >
+    <div ref={ref} className={className}>
       {children}
-    </motion.div>
+    </div>
   );
 }

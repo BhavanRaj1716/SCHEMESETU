@@ -20,6 +20,7 @@ export interface EMIResult {
   /** The effective principal after adding moratorium interest (if accrued) */
   effectivePrincipal: number;
   schedule: RepaymentScheduleEntry[];
+  yearlySchedule?: YearlyScheduleEntry[];
 }
 
 export interface RepaymentScheduleEntry {
@@ -35,4 +36,21 @@ export interface RepaymentScheduleEntry {
   totalPayment: number;
   /** Closing balance after this quarter */
   closingBalance: number;
+}
+
+export interface YearlyScheduleEntry {
+  /** Year number (1-based) */
+  year: number;
+  /** Opening balance at the start of the year */
+  openingBalance: number;
+  /** Total principal paid across the year */
+  principalPaid: number;
+  /** Total interest paid across the year */
+  interestPaid: number;
+  /** Total annual payment */
+  totalPayment: number;
+  /** Closing balance at the end of the year */
+  closingBalance: number;
+  /** Individual quarterly breakdown for this year */
+  quarters: RepaymentScheduleEntry[];
 }

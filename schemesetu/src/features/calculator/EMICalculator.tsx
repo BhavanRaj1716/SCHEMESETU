@@ -190,6 +190,16 @@ export function EMICalculator({
               <span>₹20,000 (Min)</span>
               <span>₹50 Lakh (Max)</span>
             </div>
+
+            {/* In-Person Direct Bank Visit Notice for loans > ₹15 Lakh */}
+            {loanAmount > 1500000 && (
+              <div className="p-2.5 rounded-lg bg-amber-50 border border-amber-200 text-[11px] text-amber-950 flex items-start gap-2 animate-in fade-in duration-150">
+                <Info size={14} className="text-amber-700 shrink-0 mt-0.5" />
+                <span>
+                  <strong>Direct Bank Visit Required:</strong> Loans exceeding ₹15 Lakh exceed the online digital processing cap on PM-SURAJ and require in-person submission at your nearest authorized Channel Partner / Bank branch.
+                </span>
+              </div>
+            )}
           </div>
 
           {/* Interest Rate */}
@@ -364,7 +374,7 @@ export function EMICalculator({
       <RepaymentBreakdown result={result} loanAmount={loanAmount} />
 
       {/* Schedule Table */}
-      <RepaymentScheduleTable schedule={result.schedule} />
+      <RepaymentScheduleTable schedule={result.schedule} yearlySchedule={result.yearlySchedule} />
 
       {/* Ready to apply callout */}
       <div className="bg-deep-indigo rounded-xl p-6 sm:p-8 text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-md">

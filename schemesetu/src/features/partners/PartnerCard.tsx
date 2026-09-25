@@ -67,6 +67,7 @@ export function PartnerCard({ partner, isSelected, onSelect }: PartnerCardProps)
     workingHours,
     verificationStatus,
     lastVerifiedDate,
+    isDemoData,
   } = partner;
 
   return (
@@ -93,7 +94,7 @@ export function PartnerCard({ partner, isSelected, onSelect }: PartnerCardProps)
             {verificationStatus}
           </span>
         </div>
-        <DemoDataBadge />
+        {isDemoData && <DemoDataBadge />}
       </div>
 
       {/* Partner Title */}

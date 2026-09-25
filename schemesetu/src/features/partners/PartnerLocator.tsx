@@ -1,13 +1,12 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import type { ChannelPartner } from '@/types/partner';
-import { DEMO_PARTNERS } from '@/services/mockData/partners';
+import { getPartners } from '@/services/partnerService';
 import { PartnerCard } from './PartnerCard';
 import { PartnerFilters } from './PartnerFilters';
 import { DemoDataBadge } from '@/components/ui/DemoDataBadge';
-import { IS_MOCK_MODE } from '@/services/apiClient';
 import { APP_CONFIG } from '@/config/app';
 import {
   ExternalLink,
@@ -35,33 +34,44 @@ interface PartnerLocatorProps {
 }
 
 export function PartnerLocator({ initialScheme = 'all' }: PartnerLocatorProps) {
+  const [allPartners, setAllPartners] = useState<ChannelPartner[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedScheme, setSelectedScheme] = useState<string>(initialScheme);
   const [selectedType, setSelectedType] = useState<string>('all');
   const [selectedState, setSelectedState] = useState<string>('all');
   const [selectedDistrict, setSelectedDistrict] = useState<string>('all');
   const [radiusKm, setRadiusKm] = useState<number | null>(null);
-  const [selectedPartner, setSelectedPartner] = useState<ChannelPartner | null>(DEMO_PARTNERS[0] || null);
+  const [selectedPartner, setSelectedPartner] = useState<ChannelPartner | null>(null);
   const [activeTab, setActiveTab] = useState<'both' | 'map' | 'list'>('both');
 
-  // Available unique states
-  const availableStates = useMemo(() => {
-    return Array.from(new Set(DEMO_PARTNERS.map((p) => p.state))).sort();
+  // Lazy-load the 70 KB partners dataset only when this component mounts (/partners page)
+  useEffect(() => {
+    getPartners().then((partners) => {
+      // Ensure we always have an array even if API returns unexpected shape
+      const list = Array.isArray(partners) ? partners : [];
+      setAllPartners(list);
+      setSelectedPartner(list[0] || null);
+    });
   }, []);
 
-  // Available districts for the currently selected state
+  // Derive unique states from loaded partners (no extra API call needed)
+  const availableStates = useMemo(
+    () => Array.from(new Set(allPartners.map((p) => p.state))).sort(),
+    [allPartners]
+  );
+
+  // Derive districts from loaded partners, filtered by selected state
   const availableDistricts = useMemo(() => {
-    if (selectedState === 'all') {
-      return Array.from(new Set(DEMO_PARTNERS.map((p) => p.district))).sort();
-    }
-    return Array.from(
-      new Set(DEMO_PARTNERS.filter((p) => p.state === selectedState).map((p) => p.district))
-    ).sort();
-  }, [selectedState]);
+    const source =
+      selectedState === 'all'
+        ? allPartners
+        : allPartners.filter((p) => p.state === selectedState);
+    return Array.from(new Set(source.map((p) => p.district))).sort();
+  }, [allPartners, selectedState]);
 
   // Filtered partners
   const filteredPartners = useMemo(() => {
-    return DEMO_PARTNERS.filter((partner) => {
+    return allPartners.filter((partner) => {
       const matchesSearch =
         partner.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         partner.district.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -87,7 +97,7 @@ export function PartnerLocator({ initialScheme = 'all' }: PartnerLocatorProps) {
         matchesDistrict
       );
     });
-  }, [searchQuery, selectedScheme, selectedType, selectedState, selectedDistrict]);
+  }, [allPartners, searchQuery, selectedScheme, selectedType, selectedState, selectedDistrict]);
 
   const handleReset = () => {
     setSearchQuery('');
@@ -96,7 +106,7 @@ export function PartnerLocator({ initialScheme = 'all' }: PartnerLocatorProps) {
     setSelectedState('all');
     setSelectedDistrict('all');
     setRadiusKm(null);
-    setSelectedPartner(DEMO_PARTNERS[0] || null);
+    setSelectedPartner(allPartners[0] || null);
   };
 
   const handlePartnerSelect = (partner: ChannelPartner) => {
@@ -176,7 +186,7 @@ export function PartnerLocator({ initialScheme = 'all' }: PartnerLocatorProps) {
             <span>
               Found <strong className="text-deep-indigo font-bold">{filteredPartners.length}</strong> authorized channel {filteredPartners.length === 1 ? 'partner' : 'partners'}
             </span>
-            {IS_MOCK_MODE && <DemoDataBadge />}
+            {filteredPartners.some((p) => p.isDemoData) && <DemoDataBadge />}
           </div>
 
           {/* Partner Cards Scrollable Container */}

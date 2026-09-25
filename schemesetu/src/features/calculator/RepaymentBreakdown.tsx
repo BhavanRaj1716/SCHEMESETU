@@ -30,26 +30,44 @@ export function RepaymentBreakdown({ result, loanAmount }: RepaymentBreakdownPro
     { name: 'Total Interest', value: totalInterest, color: '#C77B33' }, // muted-ochre
   ], [loanAmount, totalInterest]);
 
-  // Area chart data (cumulative over quarters)
+  // Area chart data (annual cumulative timeline over Years)
   const areaData = useMemo(() => {
+    const totalYears = Math.ceil(schedule.length / 4);
+    const resultData = [
+      {
+        name: 'Start',
+        year: 0,
+        principal: 0,
+        interest: 0,
+        balance: Math.round(loanAmount),
+      },
+    ];
+
     let runningPrincipal = 0;
     let runningInterest = 0;
-    const resultData = [];
 
-    for (const entry of schedule) {
-      runningPrincipal += entry.principalPaid;
-      runningInterest += entry.interestPaid;
+    for (let y = 1; y <= totalYears; y++) {
+      const quartersInYear = schedule.filter((q) => Math.ceil(q.quarter / 4) === y);
+      if (!quartersInYear.length) continue;
+
+      for (const q of quartersInYear) {
+        runningPrincipal += q.principalPaid;
+        runningInterest += q.interestPaid;
+      }
+
+      const closingBalance = quartersInYear[quartersInYear.length - 1].closingBalance;
+
       resultData.push({
-        name: `Q${entry.quarter}`,
-        quarter: entry.quarter,
+        name: `Year ${y}`,
+        year: y,
         principal: Math.round(runningPrincipal),
         interest: Math.round(runningInterest),
-        balance: Math.round(entry.closingBalance),
+        balance: Math.round(closingBalance),
       });
     }
 
     return resultData;
-  }, [schedule]);
+  }, [schedule, loanAmount]);
 
   const principalRatio = ((loanAmount / (totalRepayment || 1)) * 100).toFixed(1);
   const interestRatio = ((totalInterest / (totalRepayment || 1)) * 100).toFixed(1);
@@ -123,7 +141,7 @@ export function RepaymentBreakdown({ result, loanAmount }: RepaymentBreakdownPro
               Repayment Timeline & Outstanding Balance
             </h3>
             <p className="text-xs text-neutral-grey">
-              Cumulative Principal paid & Remaining Loan Balance over quarters
+              Cumulative Principal paid & Remaining Loan Balance over annual repayment timeline (Years)
             </p>
           </div>
 

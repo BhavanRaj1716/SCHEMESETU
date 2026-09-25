@@ -56,7 +56,7 @@ class HashingEmbeddingService(EmbeddingService):
         for text in texts:
             vec = [0.0] * self.dim
             for feat in self._features(text):
-                h = int(hashlib.md5(feat.encode("utf-8")).hexdigest(), 16)
+                h = int(hashlib.md5(feat.encode("utf-8"), usedforsecurity=False).hexdigest(), 16)  # nosec B324 — feature hashing only, not security
                 vec[h % self.dim] += 1.0 if (h >> 64) % 2 == 0 else -1.0
             norm = math.sqrt(sum(v * v for v in vec)) or 1.0
             out.append([v / norm for v in vec])
@@ -81,7 +81,9 @@ class SentenceTransformerEmbeddingService(EmbeddingService):
                     "or set EMBEDDING_PROVIDER=hashing for a lexical fallback."
                 ) from exc
             self._model = SentenceTransformer(self.model_name)
-            actual = self._model.get_sentence_embedding_dimension()
+            # get_embedding_dimension() is the renamed API (get_sentence_embedding_dimension deprecated)
+            get_dim = getattr(self._model, 'get_embedding_dimension', None) or getattr(self._model, 'get_sentence_embedding_dimension', None)
+            actual = get_dim() if get_dim else self.dim
             if actual != self.dim:
                 raise RuntimeError(f"EMBEDDING_DIM={self.dim} but model produces {actual}-dim vectors")
         return self._model

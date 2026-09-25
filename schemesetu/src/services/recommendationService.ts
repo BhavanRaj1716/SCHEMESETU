@@ -122,17 +122,11 @@ const ID_ALIAS_MAP: Record<string, string> = {
   'aajeevika-micro-finance-yojana': 'aajeevika',
   'udyam-nidhi-yojana': 'udyam-nidhi',
   'educational-loan-scheme': 'els',
-  'mahila-samridhi-yojana': 'mahila-samridhi',
-  'swarnima-scheme': 'swarnima',
-  'shilpi-samridhi-yojana': 'shilpi-samridhi',
   'nsfdc-mfs': 'mfs',
   'nsfdc-tl': 'term-loan',
   'nsfdc-amy': 'aajeevika',
   'nsfdc-uny': 'udyam-nidhi',
   'nsfdc-els': 'els',
-  'nsfdc-msy': 'mahila-samridhi',
-  'nsfdc-swarnima': 'swarnima',
-  'nsfdc-ssy': 'shilpi-samridhi',
 };
 
 function buildBackendPayload(request: RecommendationRequest): BackendRecommendRequest {
@@ -517,15 +511,6 @@ function mockGuidedSearch(request: GuidedSearchRequest): SchemeRecommendation[] 
       } else if (scheme.id === 'udyam-nidhi' && cost <= 500000) {
         isRelevant = true;
         relevanceReason = `Your project cost of ${fmt(cost)} is within the Udyam Nidhi Yojana band (up to ₹5,00,000)${activityText}.`;
-      } else if (scheme.id === 'mahila-samridhi' && cost <= 140000) {
-        isRelevant = true;
-        relevanceReason = `Your project cost of ${fmt(cost)} is within the Mahila Samridhi Yojana band (up to ₹1,40,000) for SC women beneficiaries${activityText}.`;
-      } else if (scheme.id === 'swarnima' && cost <= 100000) {
-        isRelevant = true;
-        relevanceReason = `Your project cost of ${fmt(cost)} is eligible under Swarnima Scheme (up to ₹1,00,000 without collateral) for SC women self-employment${activityText}.`;
-      } else if (scheme.id === 'shilpi-samridhi' && cost <= 200000) {
-        isRelevant = true;
-        relevanceReason = `Your project cost of ${fmt(cost)} is within the Shilpi Samridhi Yojana ceiling (up to ₹2,00,000) for SC artisans and craftspersons${activityText}.`;
       }
 
       if (isRelevant) {

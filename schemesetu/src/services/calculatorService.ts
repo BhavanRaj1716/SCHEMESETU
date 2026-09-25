@@ -9,7 +9,7 @@
  * so we make it an explicit parameter.
  */
 
-import type { EMIInput, EMIResult, RepaymentScheduleEntry } from '@/types/calculator';
+import type { EMIInput, EMIResult, RepaymentScheduleEntry, YearlyScheduleEntry } from '@/types/calculator';
 
 export function calculateEMI(input: EMIInput): EMIResult {
   const { loanAmount, annualInterestRate, tenureMonths, moratoriumMonths, interestAccruesDuringMoratorium } = input;
@@ -40,6 +40,8 @@ export function calculateEMI(input: EMIInput): EMIResult {
 
   // Generate quarterly repayment schedule
   const schedule = generateQuarterlySchedule(effectivePrincipal, monthlyRate, monthlyEMI, tenureMonths);
+  // Generate annual (yearly) amortization schedule
+  const yearlySchedule = generateYearlySchedule(schedule);
 
   return {
     monthlyEMI: Math.round(monthlyEMI * 100) / 100,
@@ -48,6 +50,7 @@ export function calculateEMI(input: EMIInput): EMIResult {
     moratoriumInterest: Math.round(moratoriumInterest * 100) / 100,
     effectivePrincipal: Math.round(effectivePrincipal * 100) / 100,
     schedule,
+    yearlySchedule,
   };
 }
 
@@ -90,6 +93,38 @@ function generateQuarterlySchedule(
   }
 
   return schedule;
+}
+
+function generateYearlySchedule(
+  quarterlySchedule: RepaymentScheduleEntry[]
+): YearlyScheduleEntry[] {
+  const yearlySchedule: YearlyScheduleEntry[] = [];
+  const totalYears = Math.ceil(quarterlySchedule.length / 4);
+
+  for (let y = 1; y <= totalYears; y++) {
+    const quartersInYear = quarterlySchedule.filter(
+      (q) => Math.ceil(q.quarter / 4) === y
+    );
+    if (!quartersInYear.length) continue;
+
+    const openingBalance = quartersInYear[0].openingBalance;
+    const principalPaid = quartersInYear.reduce((acc, curr) => acc + curr.principalPaid, 0);
+    const interestPaid = quartersInYear.reduce((acc, curr) => acc + curr.interestPaid, 0);
+    const totalPayment = quartersInYear.reduce((acc, curr) => acc + curr.totalPayment, 0);
+    const closingBalance = quartersInYear[quartersInYear.length - 1].closingBalance;
+
+    yearlySchedule.push({
+      year: y,
+      openingBalance: Math.round(openingBalance * 100) / 100,
+      principalPaid: Math.round(principalPaid * 100) / 100,
+      interestPaid: Math.round(interestPaid * 100) / 100,
+      totalPayment: Math.round(totalPayment * 100) / 100,
+      closingBalance: Math.round(closingBalance * 100) / 100,
+      quarters: quartersInYear,
+    });
+  }
+
+  return yearlySchedule;
 }
 
 /**

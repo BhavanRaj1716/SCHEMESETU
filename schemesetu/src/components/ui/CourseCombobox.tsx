@@ -44,6 +44,7 @@ export function CourseCombobox({ value, onChange }: CourseComboboxProps) {
   };
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     fetchCourses();
   }, []);
 
@@ -173,7 +174,7 @@ export function CourseCombobox({ value, onChange }: CourseComboboxProps) {
                   role="button"
                   tabIndex={0}
                   onClick={handleClear}
-                  onKeyDown={(e) => e.key === 'Enter' && handleClear(e as any)}
+                  onKeyDown={(e) => e.key === 'Enter' && handleClear(e as unknown as React.MouseEvent)}
                   className="p-1 text-neutral-grey hover:text-near-black rounded transition-colors"
                   aria-label="Clear course selection"
                 >

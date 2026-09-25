@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600&family=Noto+Sans+Tamil:wght@400;500;600&display=swap');
+/* Fonts are self-hosted via next/font/google in layout.tsx — no @import needed */
 @import "tailwindcss";
 
 /* ============================================================
@@ -32,7 +32,7 @@
   --color-indigo-light: #152B4D08;
   --color-red-muted: #B44040;
   --color-red-light: #B4404015;
-  --font-sans: 'Inter', 'Noto Sans Tamil', 'Noto Sans Devanagari', system-ui, sans-serif;
+  --font-sans: var(--font-inter), var(--font-devanagari), var(--font-tamil), system-ui, sans-serif;
 }
 
 /* ============================================================
@@ -170,3 +170,58 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--deep-indigo);
 }
+
+/* ============================================================
+   Google Translate Widget Styling & Complete Frame Suppression
+   ============================================================ */
+
+.goog-te-banner-frame,
+.goog-te-banner-frame.skiptranslate,
+iframe.goog-te-banner-frame,
+.VIpgJd-ZVi9od-ORHb-OEVmcd,
+.VIpgJd-ZVi9od-l4eHX-hSRGPd,
+.goog-te-gadget-simple,
+.goog-te-gadget-icon,
+.goog-te-menu-value,
+#goog-gt-tt,
+.goog-te-balloon-frame,
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+body {
+  top: 0px !important;
+  position: static !important;
+  margin-top: 0px !important;
+}
+
+html.translated-ltr,
+html.translated-rtl,
+html {
+  margin-top: 0px !important;
+  top: 0px !important;
+}
+
+.goog-text-highlight {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+#google_translate_element {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+

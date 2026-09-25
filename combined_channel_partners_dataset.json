@@ -1,0 +1,5685 @@
+{
+ "metadata": {
+  "dataset_name": "Combined Channel Partners (NBCFDC + NSFDC) + Schemes",
+  "generated_on": "2026-09-24",
+  "unique_active_partners": 157,
+  "partners_of_both_corporations_confirmed_by_name": 37,
+  "nbcfdc_only": 66,
+  "nsfdc_only": 54,
+  "raw_record_counts": {
+   "NBCFDC": 103,
+   "NSFDC": 91,
+   "sum_before_dedup": 194
+  },
+  "by_type_unique": {
+   "SCA": 72,
+   "PSB": 12,
+   "RRB": 57,
+   "Cooperative Bank": 3,
+   "NBFC": 1,
+   "Small Finance Bank": 3,
+   "NBFC-MFI": 6,
+   "Cooperative Society": 1,
+   "Other Agency": 2
+  },
+  "notes": [
+   "Overlap counted only on exact/obvious name match. State RRBs renamed/merged (e.g. Bihar Gramin Bank vs Dakshin/Uttar Bihar) are flagged POSSIBLE_RENAMED_OR_MERGED_UNVERIFIED and NOT merged, so the unique count may be slightly overstated.",
+   "Syndicate Bank (historical) excluded from active counts; 5 SchemeSetu DEMO records kept separately under demo_records.",
+   "NSFDC list has 91 records; NBCFDC 103; neither file reaches the 161 on the dashboard."
+  ]
+ },
+ "channel_partners": [
+  {
+   "entity_id": "cp-001",
+   "name": "Andhra Pradesh Backward Classes Co-operative Finance Corporation Ltd.",
+   "type": "SCA",
+   "state": "Andhra Pradesh",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "08662586585",
+   "email": "apbcfc@yahoo.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-002",
+   "name": "Assam Apex Weavers & Artisans Coop. Federation Ltd.",
+   "type": "SCA",
+   "state": "Assam",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "03612543772",
+   "email": "artfed12@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-003",
+   "name": "Assam State Development Corporation for Other Backward Classes Ltd.",
+   "type": "SCA",
+   "state": "Assam",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "03612542651",
+   "email": "aobcdc@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-004",
+   "name": "Bihar State Backward Classes Finance & Development Corporation",
+   "type": "SCA",
+   "state": "Bihar",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "06122226099",
+   "email": "bsbcfdcpatna@rediffmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-005",
+   "name": "Chandigarh SC/BC and Minorities Financial & Development Corporation",
+   "type": "SCA",
+   "state": "Chandigarh (UT)",
+   "address": "3rd Floor, Additional Town Hall Building, Sector-17-C, Chandigarh-160 017",
+   "latitude": null,
+   "longitude": null,
+   "contact": "01722700094",
+   "email": "socialwelfarechd@rediffmail.com",
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": "Chandigarh SCs, BCs & Minorities Financial & Development Corporation Ltd. (CSCFDC)",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca",
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-006",
+   "name": "Chhattisgarh State Antyavasai Sahakari Vitta Evum Vikas Nigam",
+   "type": "SCA",
+   "state": "Chhattisgarh",
+   "address": "4th Floor, Business Complex, Chhattisgarh Housing Board Bhawan, Naya Raipur - 492101",
+   "latitude": null,
+   "longitude": null,
+   "contact": "07712972730",
+   "email": "recoverycellnigam@gmail.com",
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": "Chhatisgarh State Antavasayee Sahkari Fin. & Dev.Corpn. (CGSCFDC)",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca",
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-007",
+   "name": "D. Devaraj Urs Backward Classes Development Corporation",
+   "type": "SCA",
+   "state": "Karnataka",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "08022374832",
+   "email": "md.dbcdc@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-008",
+   "name": "Delhi SC/ST/OBC/Minorities & Handicapped Financial & Development Corpn.",
+   "type": "SCA",
+   "state": "Delhi (NCT)",
+   "address": "Ambedkar Bhawan, Sector-16, Rohini, Delhi - 110 085",
+   "latitude": null,
+   "longitude": null,
+   "contact": "01127572630",
+   "email": "dsfdcdelhi@gmail.com",
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": "Delhi SC/ST/OBC/Minorities & Handicapped Financial & Development Corporation (DSFDC)",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca",
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-009",
+   "name": "Goa State Scheduled Castes & Other Backward Classes Finance & Development Corporation Ltd.",
+   "type": "SCA",
+   "state": "Goa",
+   "address": "4th Floor, Patto Centre, Near K.T.C. Bus Stand, Panaji, Goa - 403 001",
+   "latitude": null,
+   "longitude": null,
+   "contact": "08322438180",
+   "email": "goaobc@gmail.com",
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": "Goa State SCs & OBCs Finance and Development Corporation Ltd. (GSCOBCDC)",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca",
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-010",
+   "name": "Gujarat Backward Classes Development Corpn.",
+   "type": "SCA",
+   "state": "Gujarat",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "07923257557",
+   "email": "mdgbcdc14@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-011",
+   "name": "Gujarat Gopalak Development Corporation Ltd",
+   "type": "SCA",
+   "state": "Gujarat",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "07923256494",
+   "email": "md-ggdcl@gujarat.gov.in",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-012",
+   "name": "Gujarat Nomadic & Denotified Tribes Development Corporation",
+   "type": "SCA",
+   "state": "Gujarat",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "07923258776",
+   "email": "swontdntnigam@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-013",
+   "name": "Gujarat Thakor & Koli Vikas Nigam",
+   "type": "SCA",
+   "state": "Gujarat",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "07923256486",
+   "email": "md-gtkvn@gujarat.gov.in",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-014",
+   "name": "Handicrafts Development Corporation of Kerala Ltd.",
+   "type": "SCA",
+   "state": "Kerala",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "04712331358",
+   "email": "hdckerala@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-015",
+   "name": "Haryana Backward Classes & Economically Weaker Sections Kalyan Nigam",
+   "type": "SCA",
+   "state": "Haryana",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "01722701074",
+   "email": "hbckn22@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-016",
+   "name": "Himachal Backward Classes Finance & Development Corporation",
+   "type": "SCA",
+   "state": "Himachal Pradesh",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "01892264326",
+   "email": "md2010hbcfdc@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-017",
+   "name": "Jammu & Kashmir SCs, STs & OBCs Development Corporation Ltd.",
+   "type": "SCA",
+   "state": "Jammu and Kashmir",
+   "address": "Exchange Road, Near Red Cross Office, Srinagar - 190 001 (May-Oct); 135-A, Last Morh, Gandhi Nagar, Jammu - 180 004 (Nov-Apr)",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": "jkscstbccorpho1986@gmail.com",
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": "J&K SCs, STs & OBCs Dev. Corpn. Ltd. (JKSCSTBCDC)",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca",
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-018",
+   "name": "Jammu & Kashmir Women's Development Corporation",
+   "type": "SCA",
+   "state": "Jammu and Kashmir",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "01912439370",
+   "email": "jandkwdc@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-019",
+   "name": "Jharkhand State Tribal Cooperative Development Corporation Ltd.",
+   "type": "SCA",
+   "state": "Jharkhand",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "06512552398",
+   "email": "tcdc.jharkhand@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-020",
+   "name": "Karnataka Vishwakarma Communities Development Corporation Ltd.",
+   "type": "SCA",
+   "state": "Karnataka",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "08022374848",
+   "email": "mdvishwakarma2015@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-021",
+   "name": "Kerala State Artisans' Development Corporation Ltd.",
+   "type": "SCA",
+   "state": "Kerala",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "04712302752",
+   "email": "mdkadco@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-022",
+   "name": "Kerala State Backward Classes Development Corporation Ltd.",
+   "type": "SCA",
+   "state": "Kerala",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "04712577541",
+   "email": "ksbcdc@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-023",
+   "name": "Kerala State Co-operative Federation for Fisheries Development Ltd. (MATSYAFED)",
+   "type": "SCA",
+   "state": "Kerala",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "04712458606",
+   "email": "matsyafedproject@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-024",
+   "name": "Kerala State Development Corporation for Christian Converts from SCs & Recommended Communities (Ltd.)",
+   "type": "SCA",
+   "state": "Kerala",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "04812564304",
+   "email": "ksdccandrc@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-025",
+   "name": "Kerala State Palmyrah Products Development and Workers' Welfare Corporation Ltd.",
+   "type": "SCA",
+   "state": "Kerala",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "04712232206",
+   "email": "mdkelpalm01@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-026",
+   "name": "Madhya Pradesh Pichhara Varg Tatha Alpasankhayak Vitta Avam Vikas Nigam",
+   "type": "SCA",
+   "state": "Madhya Pradesh",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "8770987568",
+   "email": "mpbcandmfdc@rediffmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-027",
+   "name": "Maharashtra Rajya Itar Magas Vargiya Vitta Ani Vikas Mahamandal Ltd.",
+   "type": "SCA",
+   "state": "Maharashtra",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "02225299685",
+   "email": "mdmsobcfdc@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-028",
+   "name": "North Eastern Development Finance Corporation Ltd.",
+   "type": "SCA",
+   "state": "Assam",
+   "address": "Tea Auction Center, GS Rd, Dispur, Guwahati - 781006",
+   "latitude": null,
+   "longitude": null,
+   "contact": "03612222200",
+   "email": "mail@nedfi.com",
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": "North Eastern Development Finance Corporation Ltd. (NEDFi)",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca",
+    "NSFDC list: other_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-029",
+   "name": "Puducherry Backward Classes and Minorities Development Corporation Ltd.",
+   "type": "SCA",
+   "state": "Puducherry (UT)",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "04132202076",
+   "email": "pbcmdc@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-030",
+   "name": "Punjab Backward Classes Land Development and Finance Corporation",
+   "type": "SCA",
+   "state": "Punjab",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "01722705982",
+   "email": "punjabbackfinco@yahoo.co.in",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-031",
+   "name": "Rajasthan Other Backward Classes Finance & Development Cooperative Corporation Ltd.",
+   "type": "SCA",
+   "state": "Rajasthan",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "01412740880",
+   "email": "gmscdcho@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-032",
+   "name": "Sant Ravidas Madhya Pradesh Hastshilp Evam Hathakargha Vikas Nigam",
+   "type": "SCA",
+   "state": "Madhya Pradesh",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "0755267692",
+   "email": "hsvn@mp.gov.in",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-033",
+   "name": "Sikkim Scheduled Castes, Scheduled Tribes & Other Backward Classes Development Corporation Ltd. (SABCCO)",
+   "type": "SCA",
+   "state": "Sikkim",
+   "address": "Bhanupath, Gangtok, Sikkim - 737 101",
+   "latitude": null,
+   "longitude": null,
+   "contact": "03592209430",
+   "email": "mdsabcco@rediffmail.com",
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": "Sikkim Scheduled Castes Scheduled Tribes & Backward Classes Development Corporation (SSCSTBCDC)",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca",
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-034",
+   "name": "Stree Nidhi Credit Co-operative Federation Ltd.",
+   "type": "SCA",
+   "state": "Telangana",
+   "address": "401 & 402, 4th Floor, My Home Sarovar Plaza, Saifabad, Hyderabad - 500004",
+   "latitude": null,
+   "longitude": null,
+   "contact": "04023292090",
+   "email": "dgmfm@streenidhi.in",
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": "Streenidhi, Telangana",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca",
+    "NSFDC list: coooper2_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-035",
+   "name": "Tamil Nadu Backward Classes Economic Development Corporation",
+   "type": "SCA",
+   "state": "Tamil Nadu",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "04428190122",
+   "email": "tabcedco@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-036",
+   "name": "The Kerala State Women's Development Corporation Ltd.",
+   "type": "SCA",
+   "state": "Kerala",
+   "address": "1st Floor, Transport Bhavan, KSRTC Building, East Fort, Attakulangara - 695023",
+   "latitude": null,
+   "longitude": null,
+   "contact": "04712727668",
+   "email": "md@kswdc.org",
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": "Kerala State Women's Development Corporation (KSWDC)",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca",
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-037",
+   "name": "The Odisha Backward Classes Finance & Development Co-operative Corporation Ltd.",
+   "type": "SCA",
+   "state": "Odisha",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "06742391061",
+   "email": "obcfdcc@yahoo.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-038",
+   "name": "Tripura OBC Co-operative Development Corporation Ltd.",
+   "type": "SCA",
+   "state": "Tripura",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "03812302506",
+   "email": "agtobcgopal@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-039",
+   "name": "U. P. Sahkari Gram Vikas Bank Ltd.",
+   "type": "SCA",
+   "state": "Uttar Pradesh",
+   "address": "10, Mall Avenue, Lucknow - 226001",
+   "latitude": null,
+   "longitude": null,
+   "contact": "05222238844",
+   "email": "upsgvb@yahoo.in",
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": "UP Sahkari Gram Vikas Bank Ltd.",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca",
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-040",
+   "name": "Uttar Pradesh Pichhara Varg Vitta Avam Vikas Nigam Ltd.",
+   "type": "SCA",
+   "state": "Uttar Pradesh",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "05222635327",
+   "email": "uppvvvn@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-041",
+   "name": "Uttarakhand Bahuudeshiya Vitta Evam Vikas Nigam",
+   "type": "SCA",
+   "state": "Uttarakhand",
+   "address": "Janjati Directorate, New Building, Bhagat Singh Colony (Adhoiwala), Dehradun - 248 001",
+   "latitude": null,
+   "longitude": null,
+   "contact": "01352675226",
+   "email": "vikasnigam12@gmail.com",
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": "Uttarakhand Bahu-udeshiya Vitta Evam Vikas Nigam (UBVEVN)",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca",
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-042",
+   "name": "Vasantrao Naik Vimukta Jatis & Nomadic Tribes Development Corporation Ltd.",
+   "type": "SCA",
+   "state": "Maharashtra",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "02226202588",
+   "email": "vnvjntdc@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-043",
+   "name": "West Bengal Minorities Development & Finance Corporation",
+   "type": "SCA",
+   "state": "West Bengal",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": "03340047468",
+   "email": "mdfc.wb@gmail.com",
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-044",
+   "name": "West Bengal SC, ST & OBC Development and Finance Corporation",
+   "type": "SCA",
+   "state": "West Bengal",
+   "address": "CF 217/A/1 Salt Lake Sector-I (Mangolic Building), Kolkata - 700 064",
+   "latitude": null,
+   "longitude": null,
+   "contact": "03340261500",
+   "email": "wbscstdfc@gmail.com",
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": "West Bengal SCs, STs & OBC Development & Finance Corporation (WBSCSTOBCDFC)",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/sca",
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-045",
+   "name": "State Bank of India",
+   "type": "PSB",
+   "state": "Pan India",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-046",
+   "name": "Bank of Baroda",
+   "type": "PSB",
+   "state": "Pan India",
+   "address": "Baroda Bhavan, 7th Floor, R.C. Dutt Road, Vadodara - 390 007",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": "Bank of Baroda",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: pb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-047",
+   "name": "Bank of India",
+   "type": "PSB",
+   "state": "Pan India",
+   "address": "Bandra Kurla Complex, Bandra (East), Mumbai - 400051",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "VISVAS",
+   "nsfdc_name": "Bank of India",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: pb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-048",
+   "name": "Bank of Maharashtra",
+   "type": "PSB",
+   "state": "Pan India",
+   "address": "Head Office 'Lokmangal', 1501 Shivajinagar, Pune - 411005",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": "Bank of Maharashtra",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: pb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-049",
+   "name": "Canara Bank",
+   "type": "PSB",
+   "state": "Pan India",
+   "address": "Head Office, 112 J.C. Road, Bengaluru - 560 002",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": "Canara Bank",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: pb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-050",
+   "name": "Central Bank of India",
+   "type": "PSB",
+   "state": "Pan India",
+   "address": "Chandermukhi Bldg., Nariman Point, Mumbai - 400 021",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "VISVAS",
+   "nsfdc_name": "Central Bank of India",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: pb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-051",
+   "name": "Indian Overseas Bank",
+   "type": "PSB",
+   "state": "Pan India",
+   "address": "Central Office, 763 Anna Salai, Chennai - 600 002",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "VISVAS",
+   "nsfdc_name": "Indian Overseas Bank",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: pb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-052",
+   "name": "Indian Bank",
+   "type": "PSB",
+   "state": "Pan India",
+   "address": "Corporate Office, 254-260 Avvai Shanmugam Salai, Royapettah, Chennai - 600 014",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "VISVAS",
+   "nsfdc_name": "Indian Bank",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: pb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-053",
+   "name": "Punjab National Bank",
+   "type": "PSB",
+   "state": "Pan India",
+   "address": "Plot No.4, Sector 10, Dwarka, New Delhi - 110 075",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": "Punjab National Bank",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: pb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-054",
+   "name": "Union Bank of India",
+   "type": "PSB",
+   "state": "Pan India",
+   "address": "Rural & Agri Business Dept, Central Office, Union Bank Bhavan, Nariman Point, Mumbai",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": "Union Bank of India",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: pb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-055",
+   "name": "Punjab & Sind Bank",
+   "type": "PSB",
+   "state": "Pan India",
+   "address": "Priority Sector Advance Dept, 5th Floor, 21 Rajendra Place, New Delhi - 110 008",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "VISVAS",
+   "nsfdc_name": "Punjab & Sind Bank",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: pb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-056",
+   "name": "UCO Bank",
+   "type": "PSB",
+   "state": "Pan India",
+   "address": "No 3&4, DD Block, Sector-1, Bidhannagar, Kolkata - 700064",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "VISVAS",
+   "nsfdc_name": "UCO Bank",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: pb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-057",
+   "name": "Andhra Pragathi Grameena Bank",
+   "type": "RRB",
+   "state": "Andhra Pradesh",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-058",
+   "name": "Andhra Pradesh Grameena Vikas Bank",
+   "type": "RRB",
+   "state": "Andhra Pradesh",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-059",
+   "name": "Chaitanya Godavari Grameena Bank",
+   "type": "RRB",
+   "state": "Andhra Pradesh",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-060",
+   "name": "Saptagiri Grameena Bank",
+   "type": "RRB",
+   "state": "Andhra Pradesh",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-061",
+   "name": "Arunachal Pradesh Rural Bank",
+   "type": "RRB",
+   "state": "Arunachal Pradesh",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-062",
+   "name": "Assam Gramin Vikash Bank",
+   "type": "RRB",
+   "state": "Assam",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-063",
+   "name": "Dakshin Bihar Gramin Bank",
+   "type": "RRB",
+   "state": "Bihar",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-064",
+   "name": "Uttar Bihar Gramin Bank",
+   "type": "RRB",
+   "state": "Bihar",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-065",
+   "name": "Chhattisgarh Rajya Gramin Bank",
+   "type": "RRB",
+   "state": "Chhattisgarh",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-066",
+   "name": "Baroda Gujarat Gramin Bank",
+   "type": "RRB",
+   "state": "Gujarat",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-067",
+   "name": "Saurashtra Gramin Bank",
+   "type": "RRB",
+   "state": "Gujarat",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-068",
+   "name": "Sarva Haryana Gramin Bank",
+   "type": "RRB",
+   "state": "Haryana",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-069",
+   "name": "Himachal Pradesh Gramin Bank",
+   "type": "RRB",
+   "state": "Himachal Pradesh",
+   "address": "Jail Road (Panjethi), Mandi - 175001",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": "Himachal Pradesh Gramin Bank",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-070",
+   "name": "Ellaquai Dehati Bank",
+   "type": "RRB",
+   "state": "Jammu & Kashmir",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-071",
+   "name": "J&K Grameen Bank",
+   "type": "RRB",
+   "state": "Jammu & Kashmir",
+   "address": "Near Fruit Complex, Narwal, Jammu - 180006",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": "J&K Grameen Bank",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-072",
+   "name": "Jharkhand Rajya Gramin Bank",
+   "type": "RRB",
+   "state": "Jharkhand",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-073",
+   "name": "Karnataka Gramin Bank",
+   "type": "RRB",
+   "state": "Karnataka",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-074",
+   "name": "Karnataka Vikas Grameena Bank",
+   "type": "RRB",
+   "state": "Karnataka",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-075",
+   "name": "Kerala Gramin Bank",
+   "type": "RRB",
+   "state": "Kerala",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-076",
+   "name": "Madhya Pradesh Gramin Bank",
+   "type": "RRB",
+   "state": "Madhya Pradesh",
+   "address": "C21 Business Park, Indore - 452010",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": "Madhya Pradesh Gramin Bank",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-077",
+   "name": "Madhyanchal Gramin Bank",
+   "type": "RRB",
+   "state": "Madhya Pradesh",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-078",
+   "name": "Maharashtra Gramin Bank",
+   "type": "RRB",
+   "state": "Maharashtra",
+   "address": "CIDCO, Aurangabad - 431 003",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": "Maharashtra Gramin Bank",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-079",
+   "name": "Vidharbha Konkan Gramin Bank",
+   "type": "RRB",
+   "state": "Maharashtra",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-080",
+   "name": "Manipur Rural Bank",
+   "type": "RRB",
+   "state": "Manipur",
+   "address": "Keishampat, Imphal - 795001",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": "Manipur Rural Bank",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-081",
+   "name": "Meghalaya Rural Bank",
+   "type": "RRB",
+   "state": "Meghalaya",
+   "address": "M.T.C Building, 2nd Floor, Police Bazar, Shillong - 793001",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": "Meghalaya Rural Bank",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-082",
+   "name": "Mizoram Rural Bank",
+   "type": "RRB",
+   "state": "Mizoram",
+   "address": "MINECO, Khatla, Aizawl - 796001",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": "Mizoram Rural Bank",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-083",
+   "name": "Nagaland Rural Bank",
+   "type": "RRB",
+   "state": "Nagaland",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-084",
+   "name": "Odisha Gramya Bank",
+   "type": "RRB",
+   "state": "Odisha",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-085",
+   "name": "Utkal Grameen Bank",
+   "type": "RRB",
+   "state": "Odisha",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-086",
+   "name": "Puduvai Bharathiar Grama Bank",
+   "type": "RRB",
+   "state": "Puducherry",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-087",
+   "name": "Punjab Gramin Bank",
+   "type": "RRB",
+   "state": "Punjab",
+   "address": "HO Jalandhar Road, Kapurthala - 144 601",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": "Punjab Gramin Bank",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-088",
+   "name": "Baroda Rajasthan Kshetriya Gramin Bank",
+   "type": "RRB",
+   "state": "Rajasthan",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-089",
+   "name": "Rajasthan Marudhara Gramin Bank",
+   "type": "RRB",
+   "state": "Rajasthan",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-090",
+   "name": "Tamil Nadu Grama Bank",
+   "type": "RRB",
+   "state": "Tamil Nadu",
+   "address": "Yercaud Road, Hasthampatti, Salem - 636007",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": "Tamil Nadu Grama Bank",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-091",
+   "name": "Telangana Grameena Bank",
+   "type": "RRB",
+   "state": "Telangana",
+   "address": "Nallakunta, Hyderabad - 500044",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": "Telangana Grameena Bank",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-092",
+   "name": "Tripura Gramin Bank",
+   "type": "RRB",
+   "state": "Tripura",
+   "address": "H.O. Airport Road, Agartala - 799 005",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": "Tripura Gramin Bank",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-093",
+   "name": "Aryavart Bank",
+   "type": "RRB",
+   "state": "Uttar Pradesh",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-094",
+   "name": "Baroda UP Bank",
+   "type": "RRB",
+   "state": "Uttar Pradesh",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-095",
+   "name": "Prathama UP Gramin Bank",
+   "type": "RRB",
+   "state": "Uttar Pradesh",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-096",
+   "name": "Uttarakhand Gramin Bank",
+   "type": "RRB",
+   "state": "Uttarakhand",
+   "address": "18 New Road, Dehradun",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": "Uttarakhand Gramin Bank",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-097",
+   "name": "Bangiya Gramin Vikas Bank",
+   "type": "RRB",
+   "state": "West Bengal",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-098",
+   "name": "Paschim Banga Gramin Bank",
+   "type": "RRB",
+   "state": "West Bengal",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-099",
+   "name": "Uttarbanga Kshetriya Gramin Bank",
+   "type": "RRB",
+   "state": "West Bengal",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-100",
+   "name": "Konoklota Mahila Urban Co-operative Bank Ltd.",
+   "type": "Cooperative Bank",
+   "state": "Assam",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "Concessional & VISVAS",
+   "nsfdc_name": "Konoklata Mahila Urban Cooperative Bank",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: cooper_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-101",
+   "name": "Anik Financial Services Pvt. Ltd.",
+   "type": "NBFC",
+   "state": "Maharashtra",
+   "address": "Latur - 413 512",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC",
+    "NSFDC"
+   ],
+   "match_confidence": "NAME_MATCH",
+   "nbcfdc_scheme_track": "VISVAS",
+   "nsfdc_name": "Anik Financial Services Private Limited",
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank",
+    "NSFDC list: nbfc_list.pdf"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-102",
+   "name": "Andhra Pradesh State Co-operative Bank",
+   "type": "Cooperative Bank",
+   "state": "Andhra Pradesh",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-103",
+   "name": "Utkarsh Small Finance Bank Ltd",
+   "type": "Small Finance Bank",
+   "state": "Uttar Pradesh",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NBCFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": "VISVAS",
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "nbcfdc.gov.in/nbcfdc/web/en/bank"
+   ],
+   "data_status": "VERIFIED",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-104",
+   "name": "Andhra Pradesh Scheduled Castes Cooperative Finance Corporation Ltd. (APSCCFC)",
+   "type": "SCA",
+   "state": "Andhra Pradesh",
+   "address": "SP River View Apartments, 3rd Floor, Tadepalli, Amaravathi - 522 501",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-105",
+   "name": "Andhra Pradesh State Financial Corporation (APSFC)",
+   "type": "SCA",
+   "state": "Andhra Pradesh",
+   "address": "APSFC Building, Plot OS No.2, 2nd Cross, 3rd Road, Industrial Park, Vijayawada - 520 007",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-106",
+   "name": "Assam State Development Corporation for SCs Ltd. (ASCDC)",
+   "type": "SCA",
+   "state": "Assam",
+   "address": "Swahid Dilip Hozori Path, Sarumotoria, Dispur, Guwahati - 781 006",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-107",
+   "name": "Bihar State SCs Co-operative Development Corporation Ltd. (BSSCCDC)",
+   "type": "SCA",
+   "state": "Bihar",
+   "address": "RN-212, Officers Colony (Block-A), Bailey Road, Patna - 800 001",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-108",
+   "name": "Dadra & Nagar Haveli, Daman & Diu SCs/STs/OBCs & Minorities Financial & Development Corporation (DNDSFDC)",
+   "type": "SCA",
+   "state": "Dadra & Nagar Haveli, Daman & Diu",
+   "address": "Ground Floor, Right Wing, New Collectorate Building, Silvassa - 396 230",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-109",
+   "name": "Gujarat SCs Development Corporation (GSCDC)",
+   "type": "SCA",
+   "state": "Gujarat",
+   "address": "Dr Jivraj Mehta Bhawan, Block-10, II Floor, Old Sachivalaya, Gandhinagar - 382 010",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-110",
+   "name": "Dr. Ambedkar Antyodaya Vikas Nigam (S.C.) (DAAVN)",
+   "type": "SCA",
+   "state": "Gujarat",
+   "address": "Karmayogi Bhavan, Block No. 2, D-2 Wing, 4th Floor, Sector-10/B, Gandhinagar",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-111",
+   "name": "Haryana SCs Fin. and Development Corporation Ltd. (HSCDC)",
+   "type": "SCA",
+   "state": "Haryana",
+   "address": "SCO-2427-28, Sector 22-C, Chandigarh - 160 022",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-112",
+   "name": "Himachal Pradesh SCs & STs Development Corporation (HPSCSTDC)",
+   "type": "SCA",
+   "state": "Himachal Pradesh",
+   "address": "Kalyan Bhawan, Near Ambusha Resort, Solan - 173212",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-113",
+   "name": "Jharkhand State Scheduled Castes Cooperative Development Corporation (JSCDC)",
+   "type": "SCA",
+   "state": "Jharkhand",
+   "address": "Kalyan Complex, 3rd Floor, Balihar Road, Morabadi, Ranchi - 834008",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-114",
+   "name": "Dr B. R. Ambedkar Development Corporation Ltd. (DBRADC)",
+   "type": "SCA",
+   "state": "Karnataka",
+   "address": "9th & 10th Floor, Visheshwariah Mini Tower, Dr Ambedkar Veedhi, Bengaluru - 560 001",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-115",
+   "name": "Kerala State Development Corporation for SCs & STs Ltd. (KSDC)",
+   "type": "SCA",
+   "state": "Kerala",
+   "address": "Town Hall Road, Thrissur - 680 020",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-116",
+   "name": "MP State Cooperative SC Finance & Development Corporation (MPSCFDC)",
+   "type": "SCA",
+   "state": "Madhya Pradesh",
+   "address": "Rajiv Gandhi Bhawan, 35, Shyamala Hills, Bhopal - 462 011",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-117",
+   "name": "Mahatma Phule BCs Development Corporation Ltd. (MPBCDC)",
+   "type": "SCA",
+   "state": "Maharashtra",
+   "address": "1-N, Supreme Shopping Centre, Gulmohar Cross Road No.9, J.V.P.D. Scheme, Juhu, Mumbai - 400 049",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-118",
+   "name": "Sahityaratna Lokshahir Annabhau Sathe Development Corporation Ltd. (SLASDC)",
+   "type": "SCA",
+   "state": "Maharashtra",
+   "address": "New Administration Building No.2, 3rd Floor, Ramkrushna Chemburkar Marg, Chembur (E), Mumbai - 400 071",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-119",
+   "name": "Sant Rohidas Leather Industries & Charmakar Development Corporation (LIDCOM)",
+   "type": "SCA",
+   "state": "Maharashtra",
+   "address": "Bombay Life Building, 5th Floor, 45, Veer Nariman Road, Mumbai - 400 001",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-120",
+   "name": "Manipur Tribal Development Corporation Ltd. (MTDC)",
+   "type": "SCA",
+   "state": "Manipur",
+   "address": "Lamphelpat, Imphal - 795 004",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-121",
+   "name": "Manipur SCs & STs Cooperative Dev. Bank (MSTCB)",
+   "type": "SCA",
+   "state": "Manipur",
+   "address": "Nambun Long, Stadium Road, Imphal East - 795001",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-122",
+   "name": "Meghalaya Cooperative Apex Bank Ltd. (MCAB)",
+   "type": "SCA",
+   "state": "Meghalaya",
+   "address": "M.G. Road, Kutchery, Shillong - 793 001",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-123",
+   "name": "Mizoram Urban Cooperative Development Bank Ltd. (MUCO Bank)",
+   "type": "SCA",
+   "state": "Mizoram",
+   "address": "Lawlsawmiliani Building (Top Floor), Zarkawt, Aizawl - 796 001",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-124",
+   "name": "Mizoram Khadi & Village Industries Board (MKVIB)",
+   "type": "SCA",
+   "state": "Mizoram",
+   "address": "Zorun, Zarkawt, Aizawl - 796 007",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-125",
+   "name": "Odisha SCs & STs Dev. Finance Co-op. Corpn. Ltd. (OSFDC)",
+   "type": "SCA",
+   "state": "Odisha",
+   "address": "Lewis Road, Bhubaneshwar - 751 014",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-126",
+   "name": "Puducherry Adi Dravidar Dev. Corpn. Ltd. (PADCO)",
+   "type": "SCA",
+   "state": "Puducherry",
+   "address": "III Floor, Directorate of Adi Dravidar Welfare Department, Thattanchavady, Puducherry - 605 009",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-127",
+   "name": "Punjab Scheduled Castes Land Development & Finance Corporation (PSCLDFC)",
+   "type": "SCA",
+   "state": "Punjab",
+   "address": "SCO No.101-102-103, Sector 17-C, Chandigarh - 160 017",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-128",
+   "name": "Rajasthan SCs & STs Fin. & Dev. Co-op. Corporation Ltd. (RSCDC)",
+   "type": "SCA",
+   "state": "Rajasthan",
+   "address": "III Floor, Central Block, Nehru Sahakar Bhawan, Bhawani Singh Marg, Jaipur - 302005",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-129",
+   "name": "Tamil Nadu Adi Dravidar Housing & Development Corporation Ltd. (TAHDCO)",
+   "type": "SCA",
+   "state": "Tamil Nadu",
+   "address": "No.31, Cenotaph Road, 2nd Lane, Teynampet, Chennai - 600 018",
+   "latitude": 13.0407,
+   "longitude": 80.2496,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": [
+    "micro-finance-scheme",
+    "term-loan",
+    "aajeevika-micro-finance-yojana",
+    "udyam-nidhi-yojana",
+    "educational-loan-scheme"
+   ],
+   "official_sources": [
+    "NSFDC list: sca_list.pdf",
+    "https://tahdco.com/contact-us.php"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-130",
+   "name": "Tripura Scheduled Castes Co-op. Devp. Corpn. Ltd. (TSCDC)",
+   "type": "SCA",
+   "state": "Tripura",
+   "address": "Krishna Nagar P.O. Lake Chomuhani, Agartala - 799 001",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-131",
+   "name": "UP Scheduled Castes Finance & Dev. Corpn. Ltd. (UPSCFDC)",
+   "type": "SCA",
+   "state": "Uttar Pradesh",
+   "address": "B-912, Sector-C, Mahanagar, Lucknow - 226 006",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: sca_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-132",
+   "name": "Bihar Gramin Bank",
+   "type": "RRB",
+   "state": "Bihar",
+   "address": "Asochak, Patna - 800016",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": "POSSIBLE_RENAMED_OR_MERGED_UNVERIFIED",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": [
+    "Dakshin Bihar Gramin Bank",
+    "Uttar Bihar Gramin Bank"
+   ],
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": "NBCFDC lists this state RRB under different (pre-merger) name(s); a same-bank link is inferred, not confirmed."
+  },
+  {
+   "entity_id": "cp-133",
+   "name": "Jharkhand Gramin Bank",
+   "type": "RRB",
+   "state": "Jharkhand",
+   "address": "Kutchery Road, Ranchi - 834001",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": "POSSIBLE_RENAMED_OR_MERGED_UNVERIFIED",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": [
+    "Jharkhand Rajya Gramin Bank"
+   ],
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": "NBCFDC lists this state RRB under different (pre-merger) name(s); a same-bank link is inferred, not confirmed."
+  },
+  {
+   "entity_id": "cp-134",
+   "name": "Haryana Gramin Bank",
+   "type": "RRB",
+   "state": "Haryana",
+   "address": "Delhi Road, Rohtak - 124 001",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": "POSSIBLE_RENAMED_OR_MERGED_UNVERIFIED",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": [
+    "Sarva Haryana Gramin Bank"
+   ],
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": "NBCFDC lists this state RRB under different (pre-merger) name(s); a same-bank link is inferred, not confirmed."
+  },
+  {
+   "entity_id": "cp-135",
+   "name": "Gujarat Gramin Bank",
+   "type": "RRB",
+   "state": "Gujarat",
+   "address": "Head Office, Bharuch - 392001",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": "POSSIBLE_RENAMED_OR_MERGED_UNVERIFIED",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": [
+    "Baroda Gujarat Gramin Bank",
+    "Saurashtra Gramin Bank"
+   ],
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": "NBCFDC lists this state RRB under different (pre-merger) name(s); a same-bank link is inferred, not confirmed."
+  },
+  {
+   "entity_id": "cp-136",
+   "name": "Rajasthan Gramin Bank",
+   "type": "RRB",
+   "state": "Rajasthan",
+   "address": "Sardarpura, Jodhpur - 342003",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": "POSSIBLE_RENAMED_OR_MERGED_UNVERIFIED",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": [
+    "Baroda Rajasthan Kshetriya Gramin Bank",
+    "Rajasthan Marudhara Gramin Bank"
+   ],
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": "NBCFDC lists this state RRB under different (pre-merger) name(s); a same-bank link is inferred, not confirmed."
+  },
+  {
+   "entity_id": "cp-137",
+   "name": "Uttar Pradesh Gramin Bank",
+   "type": "RRB",
+   "state": "Uttar Pradesh",
+   "address": "Gomti Nagar Extension, Lucknow",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": "POSSIBLE_RENAMED_OR_MERGED_UNVERIFIED",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": [
+    "Aryavart Bank",
+    "Baroda UP Bank",
+    "Prathama UP Gramin Bank"
+   ],
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": "NBCFDC lists this state RRB under different (pre-merger) name(s); a same-bank link is inferred, not confirmed."
+  },
+  {
+   "entity_id": "cp-138",
+   "name": "Kerala Grameena Bank",
+   "type": "RRB",
+   "state": "Kerala",
+   "address": "Malappuram - 676505",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": "POSSIBLE_RENAMED_OR_MERGED_UNVERIFIED",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": [
+    "Kerala Gramin Bank"
+   ],
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": "NBCFDC lists this state RRB under different (pre-merger) name(s); a same-bank link is inferred, not confirmed."
+  },
+  {
+   "entity_id": "cp-139",
+   "name": "Karnataka Grameena Bank",
+   "type": "RRB",
+   "state": "Karnataka",
+   "address": "Head Office, Mysuru - 570017",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": "POSSIBLE_RENAMED_OR_MERGED_UNVERIFIED",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": [
+    "Karnataka Gramin Bank",
+    "Karnataka Vikas Grameena Bank"
+   ],
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": "NBCFDC lists this state RRB under different (pre-merger) name(s); a same-bank link is inferred, not confirmed."
+  },
+  {
+   "entity_id": "cp-140",
+   "name": "Assam Gramin Bank",
+   "type": "RRB",
+   "state": "Assam",
+   "address": "HO, G.S. Road, Guwahati - 781 005",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": "POSSIBLE_RENAMED_OR_MERGED_UNVERIFIED",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": [
+    "Assam Gramin Vikash Bank"
+   ],
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": "NBCFDC lists this state RRB under different (pre-merger) name(s); a same-bank link is inferred, not confirmed."
+  },
+  {
+   "entity_id": "cp-141",
+   "name": "Andhra Pradesh Grameena Bank",
+   "type": "RRB",
+   "state": "Andhra Pradesh",
+   "address": "Broadipet, Guntur - 522 002",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": "POSSIBLE_RENAMED_OR_MERGED_UNVERIFIED",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": [
+    "Andhra Pragathi Grameena Bank",
+    "Andhra Pradesh Grameena Vikas Bank",
+    "Chaitanya Godavari Grameena Bank",
+    "Saptagiri Grameena Bank"
+   ],
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": "NBCFDC lists this state RRB under different (pre-merger) name(s); a same-bank link is inferred, not confirmed."
+  },
+  {
+   "entity_id": "cp-142",
+   "name": "Puducherry Grama Bank",
+   "type": "RRB",
+   "state": "Puducherry",
+   "address": "Muthialpet, Puducherry - 605 003",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": "POSSIBLE_RENAMED_OR_MERGED_UNVERIFIED",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": [
+    "Puduvai Bharathiar Grama Bank"
+   ],
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": "NBCFDC lists this state RRB under different (pre-merger) name(s); a same-bank link is inferred, not confirmed."
+  },
+  {
+   "entity_id": "cp-143",
+   "name": "West Bengal Gramin Bank",
+   "type": "RRB",
+   "state": "West Bengal",
+   "address": "Tikiapara, Howrah - 711101",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": "POSSIBLE_RENAMED_OR_MERGED_UNVERIFIED",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": [
+    "Bangiya Gramin Vikas Bank",
+    "Paschim Banga Gramin Bank",
+    "Uttarbanga Kshetriya Gramin Bank"
+   ],
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": "NBCFDC lists this state RRB under different (pre-merger) name(s); a same-bank link is inferred, not confirmed."
+  },
+  {
+   "entity_id": "cp-144",
+   "name": "Chhattisgarh Gramin Bank",
+   "type": "RRB",
+   "state": "Chhattisgarh",
+   "address": "Corporate Office, Nava Raipur - 492013",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": "POSSIBLE_RENAMED_OR_MERGED_UNVERIFIED",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": [
+    "Chhattisgarh Rajya Gramin Bank"
+   ],
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": "NBCFDC lists this state RRB under different (pre-merger) name(s); a same-bank link is inferred, not confirmed."
+  },
+  {
+   "entity_id": "cp-145",
+   "name": "Odisha Grameen Bank",
+   "type": "RRB",
+   "state": "Odisha",
+   "address": "Jagamara, Bhubaneswar - 751030",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": "POSSIBLE_RENAMED_OR_MERGED_UNVERIFIED",
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": [
+    "Odisha Gramya Bank",
+    "Utkal Grameen Bank"
+   ],
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: rrb_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": "NBCFDC lists this state RRB under different (pre-merger) name(s); a same-bank link is inferred, not confirmed."
+  },
+  {
+   "entity_id": "cp-146",
+   "name": "Grameen Development & Finance Private Limited",
+   "type": "NBFC-MFI",
+   "state": "Assam",
+   "address": "Kamrup - 781 124",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: nbfc_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-147",
+   "name": "ASA International Microfinance Ltd.",
+   "type": "NBFC-MFI",
+   "state": "West Bengal",
+   "address": "Salt Lake City, Kolkata - 700 091",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: nbfc_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-148",
+   "name": "Midland Microfin Ltd.",
+   "type": "NBFC-MFI",
+   "state": "Punjab",
+   "address": "Jalandhar - 144 001",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: nbfc_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-149",
+   "name": "Satin Creditcare Network Ltd.",
+   "type": "NBFC-MFI",
+   "state": "Haryana",
+   "address": "Gurugram - 122 016",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: nbfc_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-150",
+   "name": "Pahal Financial Services Pvt. Ltd.",
+   "type": "NBFC-MFI",
+   "state": "Gujarat",
+   "address": "Ahmedabad - 380 054",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: nbfc_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-151",
+   "name": "Vector Finance Pvt. Ltd.",
+   "type": "NBFC-MFI",
+   "state": "Odisha",
+   "address": "Bhubaneswar - 751029",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: nbfc_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-152",
+   "name": "Shri Mahila Sewa Sahakari Bank Ltd.",
+   "type": "Cooperative Bank",
+   "state": "Gujarat",
+   "address": "109 Sakar-II, Opp. Town Hall, Ellisbridge, Ahmedabad - 38006",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: cooper_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-153",
+   "name": "Streenidhi AP",
+   "type": "Cooperative Society",
+   "state": "Andhra Pradesh",
+   "address": "2nd Floor, NTR Administrative Block, RTC Complex, Vijayawada - 520013",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: coooper2_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-154",
+   "name": "Jharkhand Silk Textile & Handicraft Development Corporation Ltd. (JHARCRAFT)",
+   "type": "Other Agency",
+   "state": "Jharkhand",
+   "address": "DIC Campus, Ratu Road, Ranchi - 834001",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: other_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-155",
+   "name": "Small Industries Development Bank of India (SIDBI)",
+   "type": "Other Agency",
+   "state": "Uttar Pradesh",
+   "address": "SIDBI Tower, 15 Ashok Marg, Lucknow - 226001",
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: other_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-156",
+   "name": "AU Small Finance Bank",
+   "type": "Small Finance Bank",
+   "state": "Pan India",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: small_file_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-157",
+   "name": "Ujjivan Small Finance Bank",
+   "type": "Small Finance Bank",
+   "state": "Pan India",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "NSFDC list: small_file_list.pdf"
+   ],
+   "data_status": "OFFICIAL_LIST",
+   "notes": null
+  },
+  {
+   "entity_id": "cp-158",
+   "name": "Syndicate Bank (Tamil Nadu channel - amalgamated into Canara Bank, 1 Apr 2020)",
+   "type": "PSB",
+   "state": "Tamil Nadu",
+   "address": null,
+   "latitude": null,
+   "longitude": null,
+   "contact": null,
+   "email": null,
+   "partner_of": [
+    "NSFDC"
+   ],
+   "match_confidence": null,
+   "nbcfdc_scheme_track": null,
+   "nsfdc_name": null,
+   "possibly_related_nbcfdc_names": null,
+   "supported_schemes": null,
+   "official_sources": [
+    "https://socialjustice.gov.in/public/ckeditor/upload/Summary%20Report-Evaluation%20of%20NSFDC_1648795113.pdf"
+   ],
+   "data_status": "HISTORICAL",
+   "notes": "Amalgamated into Canara Bank on 1 Apr 2020; not counted as active."
+  }
+ ],
+ "demo_records": [
+  {
+   "id": "demo-sca-cbe",
+   "name": "DEMO - SCA District Office (Coimbatore)",
+   "type": "SCA",
+   "state": "Tamil Nadu",
+   "district": "Coimbatore",
+   "address": "DEMO address (not a real location) - illustrates a district-level office; TAHDCO's HQ is the VERIFIED record",
+   "latitude": 11.0168,
+   "longitude": 76.9558,
+   "supported_schemes": [
+    "micro-finance-scheme",
+    "term-loan",
+    "educational-loan-scheme"
+   ],
+   "official_source": null,
+   "source_document": "DEMO record - simulated for demonstration only",
+   "last_verified_at": "2026-09-22",
+   "data_status": "DEMO"
+  },
+  {
+   "id": "demo-mfi-cbe",
+   "name": "DEMO - NBFC-MFI Branch (Coimbatore)",
+   "type": "NBFC-MFI",
+   "state": "Tamil Nadu",
+   "district": "Coimbatore",
+   "address": "DEMO address (not a real location)",
+   "latitude": 11.0045,
+   "longitude": 76.9616,
+   "supported_schemes": [
+    "aajeevika-micro-finance-yojana"
+   ],
+   "official_source": null,
+   "source_document": "DEMO record - simulated for demonstration only",
+   "last_verified_at": "2026-09-22",
+   "data_status": "DEMO"
+  },
+  {
+   "id": "demo-coop-cbe",
+   "name": "DEMO - Cooperative Bank Branch (Coimbatore)",
+   "type": "Cooperative Bank",
+   "state": "Tamil Nadu",
+   "district": "Coimbatore",
+   "address": "DEMO address (not a real location)",
+   "latitude": 11.0296,
+   "longitude": 76.9702,
+   "supported_schemes": [
+    "udyam-nidhi-yojana"
+   ],
+   "official_source": null,
+   "source_document": "DEMO record - simulated for demonstration only",
+   "last_verified_at": "2026-09-22",
+   "data_status": "DEMO"
+  },
+  {
+   "id": "demo-sfb-mdu",
+   "name": "DEMO - Small Finance Bank Branch (Madurai)",
+   "type": "Small Finance Bank",
+   "state": "Tamil Nadu",
+   "district": "Madurai",
+   "address": "DEMO address (not a real location)",
+   "latitude": 9.9252,
+   "longitude": 78.1198,
+   "supported_schemes": [
+    "udyam-nidhi-yojana"
+   ],
+   "official_source": null,
+   "source_document": "DEMO record - simulated for demonstration only",
+   "last_verified_at": "2026-09-22",
+   "data_status": "DEMO"
+  },
+  {
+   "id": "demo-psb-cbe",
+   "name": "DEMO - Public Sector Bank Branch (Coimbatore)",
+   "type": "PSB",
+   "state": "Tamil Nadu",
+   "district": "Coimbatore",
+   "address": "DEMO address (not a real location)",
+   "latitude": 10.9985,
+   "longitude": 76.9629,
+   "supported_schemes": [
+    "educational-loan-scheme"
+   ],
+   "official_source": null,
+   "source_document": "DEMO record - simulated for demonstration only",
+   "last_verified_at": "2026-09-22",
+   "data_status": "DEMO"
+  }
+ ],
+ "schemes": [
+  {
+   "category": "income_generating",
+   "beneficiary_category": [
+    "SC"
+   ],
+   "state_scope": "ALL_INDIA",
+   "district_scope": "ALL",
+   "coverage_percentage": 90,
+   "required_documents": null,
+   "application_process": "Apply through the official PM-SURAJ portal (as directed on the NSFDC scheme page). Proposals are routed via State Channelizing Agencies / Channelizing Agencies, which verify eligibility.",
+   "official_application_url": "https://pmsuraj.dosje.gov.in/",
+   "applicable_activities": [
+    "Agricultural Land Purchase",
+    "Hatcheries",
+    "Duckery",
+    "Goat Rearing",
+    "Sheep Farming",
+    "Fisheries",
+    "Ornamental Fish Rearing",
+    "Tractors",
+    "Power Tillers",
+    "Cultivation & Processing of Medicinal Plants",
+    "Honey Bee Cultivation",
+    "Irrigation Borewells/Minor Irrigation",
+    "Agricultural Implements",
+    "Horticulture",
+    "Sericulture",
+    "Layers / Broilers",
+    "Cows / Buffaloes",
+    "Piggery",
+    "Aquaculture",
+    "Floriculture",
+    "Automobile Repair / Servicing Units",
+    "Brick Making",
+    "Bicycle Repairing Shops",
+    "Bicycle Seat Cover Making",
+    "Biogas Plant",
+    "Candle Manufacturing",
+    "Car Upholstery & Seat Making",
+    "Cement Solid Blocks",
+    "Coir Industry",
+    "Carpet Manufacturing",
+    "Copperware/Utensils Manufacturing",
+    "Exercise Books & Registers Making",
+    "Readymade Garment Manufacturing",
+    "Ginger & Turmeric Processing",
+    "Granite Tiles",
+    "Handmade Paper",
+    "Ornaments Polishing Units",
+    "Stone Crushing",
+    "Supari Processing",
+    "Printing Press",
+    "Furniture Making",
+    "Flour Mill",
+    "Soft Toys Making",
+    "Handlooms/Powerlooms",
+    "Embroidery/Knitting",
+    "Woollen Garments/Shawls Making",
+    "Hosiery Units",
+    "Jute Fabrics/Bags",
+    "Leather Garments",
+    "Leather Processing",
+    "Leather & Rexine Articles",
+    "Lime Kilns",
+    "Plastic Bags Manufacturing",
+    "Potteries",
+    "Handicrafts Making",
+    "Pouch Making",
+    "Incense Stick Making",
+    "Rubber Industry",
+    "Shoe/Chappal Manufacturing",
+    "Umbrella Making",
+    "Fiberglass Manufacturing",
+    "Mineral Water Bottling Plant",
+    "Oil Mills",
+    "Saw Mills",
+    "Footwear Manufacturing",
+    "Silver Ornaments Making",
+    "Bakery",
+    "Bamboo Furniture Making",
+    "Battery Making",
+    "Departmental Stores",
+    "Beautician",
+    "Band Party",
+    "Fish/Meat Shops",
+    "Petty Shops",
+    "Diagnostic Center / Blood Bank",
+    "Book Binding/Book Shops",
+    "Cards Shop",
+    "Clinical Labs",
+    "Stationery Shops",
+    "Cloth Merchant",
+    "Computer Centres",
+    "Computer Hardware & Servicing",
+    "Dental Clinics",
+    "Desktop Printing",
+    "Driving School",
+    "Eye Clinics",
+    "Food Packing Unit",
+    "Gas Agency",
+    "Gem Stone Cutting & Polishing",
+    "Photography/Videography",
+    "Shopping Complex",
+    "Shuttering",
+    "Spice Grinding",
+    "Spray Painting",
+    "Silk Weaving",
+    "Steel Fabrication",
+    "Sweet Shop",
+    "Tailoring",
+    "Water Sports Equipments",
+    "Chemist Shops",
+    "Wooden/Steel Furniture",
+    "Dhabas/Mini Hotels",
+    "Tourist Lodge",
+    "Electrical Items Shop",
+    "Hardware Shop",
+    "Electrical Winding",
+    "Welding & Refrigeration",
+    "Vegetable Vending",
+    "Watch Repair/Sales Shop",
+    "Bangle/Cosmetic Shop",
+    "Digital Mixing Lab",
+    "Seeds/Fertilizers/Pesticides Shops",
+    "Auto Rickshaws/Auto Load Carrier",
+    "Light Commercial Vehicles/Mini Buses",
+    "Jeeps/Car Taxies",
+    "Earth Movers (JCB)",
+    "Laundry/Dry-cleaning Shops",
+    "Machine Shops",
+    "Marble Polishing",
+    "Milk Chilling Centres/Booths",
+    "Garments Shop",
+    "Mobile Crane",
+    "Nursing Home/Hospitals",
+    "Nursery School",
+    "Passenger/Fishing Boats",
+    "Public Address System",
+    "Pump Set/Minor Irrigation",
+    "Ropeway",
+    "Sales & Servicing of Electric Items",
+    "Supplying Unit",
+    "Commercial Centre (STD/Photocopier/Scanner)",
+    "Tannery",
+    "Tent House/Decorators",
+    "Transport Vehicles (Autos, Taxies, LCVs, Buses, Trucks)",
+    "Travel Agency",
+    "TV/Audio-Video/Refrigerator/AC Repair",
+    "Typing School",
+    "Tyre Retreading",
+    "Tyre Servicing & Vulcanising",
+    "Xerox/Typing/Lamination Centre",
+    "Internet Cafe",
+    "Cable TV"
+   ],
+   "source_organization": "NSFDC",
+   "source_url": "https://nsfdc.nic.in/scheme",
+   "source_document": "NSFDC loan/credit schemes page (nsfdc.nic.in/scheme)",
+   "last_verified_at": "2026-09-22",
+   "data_updated_at": "2026-09-21",
+   "data_status": "VERIFIED",
+   "search_aliases": [
+    "dairy",
+    "dairy farming",
+    "milk",
+    "cattle",
+    "livestock",
+    "animal husbandry",
+    "small business",
+    "self employment",
+    "shop",
+    "trade",
+    "start a business"
+   ],
+   "eligibility_summary": "Scheduled Caste beneficiaries with annual family income up to ₹5.00 lakh (effective 7 Jan 2026), for income-generating activities; eligibility is verified by the authorised channelizing agency.",
+   "id": "micro-finance-scheme",
+   "scheme_code": "NSFDC-MFS",
+   "name": "Micro Finance Scheme (MFS)",
+   "purpose": "Micro credit finance for small income-generating units costing up to ₹1.40 lakh.",
+   "description": "Micro Credit Finance for small units with project cost up to ₹1.40 lakh, delivered through State Channelizing Agencies/Channelizing Agencies. Loan up to 90% of project cost, maximum ₹1.25 lakh per unit.",
+   "max_project_cost": 140000,
+   "max_loan_amount": 125000,
+   "interest_rate": 6.5,
+   "interest_rate_text": "Beneficiary pays 6.5% p.a. (NSFDC charges 2.5% p.a. from the SCAs/CAs).",
+   "repayment_period": "Quarterly instalments within a maximum of 3 years from the date of disbursement, including the moratorium.",
+   "max_repayment_months": 36,
+   "moratorium": "3 months (included in the repayment period)",
+   "moratorium_months": 3,
+   "rules": [
+    {
+     "criterion": "Beneficiary category",
+     "field": "beneficiary_category",
+     "operator": "==",
+     "value": "SC",
+     "unit": null,
+     "description": "The beneficiary must belong to the Scheduled Caste (SC) community.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/eligibility-requirements",
+     "source_document": "NSFDC eligibility requirements page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Annual family income",
+     "field": "annual_family_income",
+     "operator": "<=",
+     "value": 500000,
+     "unit": "INR/year",
+     "description": "Annual family income must not exceed ₹5.00 lakh for credit/loan-based schemes (rural and urban).",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/eligibility-requirements",
+     "source_document": "NSFDC eligibility requirements page",
+     "effective_from": "2026-01-07",
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Scheduled Caste status verification",
+     "field": "caste_certificate",
+     "operator": "manual",
+     "value": null,
+     "unit": null,
+     "description": "Scheduled Caste status and all eligibility criteria are verified by the authorised channelizing agency (SCA/CA), which is solely responsible for verification; NSFDC may re-verify.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/eligibility-requirements",
+     "source_document": "NSFDC eligibility requirements page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Purpose of financing",
+     "field": "purpose_category",
+     "operator": "==",
+     "value": "income_generating",
+     "unit": null,
+     "description": "The scheme finances income generating activities.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Loan up to 90% of project cost",
+     "field": "loan_to_project_cost_ratio",
+     "operator": "<=",
+     "value": 0.9,
+     "unit": "ratio",
+     "description": "NSFDC provides loans up to 90% of the project cost.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "State applicability",
+     "field": "state",
+     "operator": "in",
+     "value": [
+      "ALL_INDIA"
+     ],
+     "unit": null,
+     "description": "No state restriction is stated on the official scheme page; delivery is through channelizing agencies.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Project cost",
+     "field": "project_cost",
+     "operator": "<=",
+     "value": 140000,
+     "unit": "INR",
+     "description": "Units costing up to ₹1.40 lakh.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Loan amount",
+     "field": "loan_required",
+     "operator": "<=",
+     "value": 125000,
+     "unit": "INR",
+     "description": "Maximum loan is ₹1.25 lakh per unit.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    }
+   ]
+  },
+  {
+   "category": "income_generating",
+   "beneficiary_category": [
+    "SC"
+   ],
+   "state_scope": "ALL_INDIA",
+   "district_scope": "ALL",
+   "coverage_percentage": 90,
+   "required_documents": null,
+   "application_process": "Apply through the official PM-SURAJ portal (as directed on the NSFDC scheme page). Proposals are routed via State Channelizing Agencies / Channelizing Agencies, which verify eligibility.",
+   "official_application_url": "https://pmsuraj.dosje.gov.in/",
+   "applicable_activities": [
+    "Agricultural Land Purchase",
+    "Hatcheries",
+    "Duckery",
+    "Goat Rearing",
+    "Sheep Farming",
+    "Fisheries",
+    "Ornamental Fish Rearing",
+    "Tractors",
+    "Power Tillers",
+    "Cultivation & Processing of Medicinal Plants",
+    "Honey Bee Cultivation",
+    "Irrigation Borewells/Minor Irrigation",
+    "Agricultural Implements",
+    "Horticulture",
+    "Sericulture",
+    "Layers / Broilers",
+    "Cows / Buffaloes",
+    "Piggery",
+    "Aquaculture",
+    "Floriculture",
+    "Automobile Repair / Servicing Units",
+    "Brick Making",
+    "Bicycle Repairing Shops",
+    "Bicycle Seat Cover Making",
+    "Biogas Plant",
+    "Candle Manufacturing",
+    "Car Upholstery & Seat Making",
+    "Cement Solid Blocks",
+    "Coir Industry",
+    "Carpet Manufacturing",
+    "Copperware/Utensils Manufacturing",
+    "Exercise Books & Registers Making",
+    "Readymade Garment Manufacturing",
+    "Ginger & Turmeric Processing",
+    "Granite Tiles",
+    "Handmade Paper",
+    "Ornaments Polishing Units",
+    "Stone Crushing",
+    "Supari Processing",
+    "Printing Press",
+    "Furniture Making",
+    "Flour Mill",
+    "Soft Toys Making",
+    "Handlooms/Powerlooms",
+    "Embroidery/Knitting",
+    "Woollen Garments/Shawls Making",
+    "Hosiery Units",
+    "Jute Fabrics/Bags",
+    "Leather Garments",
+    "Leather Processing",
+    "Leather & Rexine Articles",
+    "Lime Kilns",
+    "Plastic Bags Manufacturing",
+    "Potteries",
+    "Handicrafts Making",
+    "Pouch Making",
+    "Incense Stick Making",
+    "Rubber Industry",
+    "Shoe/Chappal Manufacturing",
+    "Umbrella Making",
+    "Fiberglass Manufacturing",
+    "Mineral Water Bottling Plant",
+    "Oil Mills",
+    "Saw Mills",
+    "Footwear Manufacturing",
+    "Silver Ornaments Making",
+    "Bakery",
+    "Bamboo Furniture Making",
+    "Battery Making",
+    "Departmental Stores",
+    "Beautician",
+    "Band Party",
+    "Fish/Meat Shops",
+    "Petty Shops",
+    "Diagnostic Center / Blood Bank",
+    "Book Binding/Book Shops",
+    "Cards Shop",
+    "Clinical Labs",
+    "Stationery Shops",
+    "Cloth Merchant",
+    "Computer Centres",
+    "Computer Hardware & Servicing",
+    "Dental Clinics",
+    "Desktop Printing",
+    "Driving School",
+    "Eye Clinics",
+    "Food Packing Unit",
+    "Gas Agency",
+    "Gem Stone Cutting & Polishing",
+    "Photography/Videography",
+    "Shopping Complex",
+    "Shuttering",
+    "Spice Grinding",
+    "Spray Painting",
+    "Silk Weaving",
+    "Steel Fabrication",
+    "Sweet Shop",
+    "Tailoring",
+    "Water Sports Equipments",
+    "Chemist Shops",
+    "Wooden/Steel Furniture",
+    "Dhabas/Mini Hotels",
+    "Tourist Lodge",
+    "Electrical Items Shop",
+    "Hardware Shop",
+    "Electrical Winding",
+    "Welding & Refrigeration",
+    "Vegetable Vending",
+    "Watch Repair/Sales Shop",
+    "Bangle/Cosmetic Shop",
+    "Digital Mixing Lab",
+    "Seeds/Fertilizers/Pesticides Shops",
+    "Auto Rickshaws/Auto Load Carrier",
+    "Light Commercial Vehicles/Mini Buses",
+    "Jeeps/Car Taxies",
+    "Earth Movers (JCB)",
+    "Laundry/Dry-cleaning Shops",
+    "Machine Shops",
+    "Marble Polishing",
+    "Milk Chilling Centres/Booths",
+    "Garments Shop",
+    "Mobile Crane",
+    "Nursing Home/Hospitals",
+    "Nursery School",
+    "Passenger/Fishing Boats",
+    "Public Address System",
+    "Pump Set/Minor Irrigation",
+    "Ropeway",
+    "Sales & Servicing of Electric Items",
+    "Supplying Unit",
+    "Commercial Centre (STD/Photocopier/Scanner)",
+    "Tannery",
+    "Tent House/Decorators",
+    "Transport Vehicles (Autos, Taxies, LCVs, Buses, Trucks)",
+    "Travel Agency",
+    "TV/Audio-Video/Refrigerator/AC Repair",
+    "Typing School",
+    "Tyre Retreading",
+    "Tyre Servicing & Vulcanising",
+    "Xerox/Typing/Lamination Centre",
+    "Internet Cafe",
+    "Cable TV"
+   ],
+   "source_organization": "NSFDC",
+   "source_url": "https://nsfdc.nic.in/scheme",
+   "source_document": "NSFDC loan/credit schemes page (nsfdc.nic.in/scheme)",
+   "last_verified_at": "2026-09-22",
+   "data_updated_at": "2026-09-21",
+   "data_status": "VERIFIED",
+   "search_aliases": [
+    "dairy",
+    "dairy farming",
+    "milk",
+    "cattle",
+    "livestock",
+    "animal husbandry",
+    "small business",
+    "self employment",
+    "shop",
+    "trade",
+    "start a business"
+   ],
+   "eligibility_summary": "Scheduled Caste beneficiaries with annual family income up to ₹5.00 lakh (effective 7 Jan 2026), for income-generating activities; eligibility is verified by the authorised channelizing agency.",
+   "id": "term-loan",
+   "scheme_code": "NSFDC-TL",
+   "name": "Term Loan",
+   "purpose": "Term loans for income-generating units costing more than ₹1.40 lakh and up to ₹50 lakh.",
+   "description": "Term loans for units costing more than ₹1.40 lakh and up to ₹50 lakh. Loan up to 90% of project cost, above ₹1.25 lakh and up to ₹45 lakh per unit.",
+   "min_project_cost": 140000,
+   "max_project_cost": 5000000,
+   "min_loan_amount": 125000,
+   "max_loan_amount": 4500000,
+   "interest_rate": 8,
+   "interest_rate_text": "Beneficiary pays 8% p.a. (NSFDC charges 4% p.a. from the SCAs/CAs).",
+   "repayment_period": "Quarterly instalments within 7 years, including the moratorium.",
+   "max_repayment_months": 84,
+   "moratorium": "6 months (12 months for plantation and construction activities)",
+   "moratorium_months": 6,
+   "rules": [
+    {
+     "criterion": "Beneficiary category",
+     "field": "beneficiary_category",
+     "operator": "==",
+     "value": "SC",
+     "unit": null,
+     "description": "The beneficiary must belong to the Scheduled Caste (SC) community.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/eligibility-requirements",
+     "source_document": "NSFDC eligibility requirements page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Annual family income",
+     "field": "annual_family_income",
+     "operator": "<=",
+     "value": 500000,
+     "unit": "INR/year",
+     "description": "Annual family income must not exceed ₹5.00 lakh for credit/loan-based schemes (rural and urban).",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/eligibility-requirements",
+     "source_document": "NSFDC eligibility requirements page",
+     "effective_from": "2026-01-07",
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Scheduled Caste status verification",
+     "field": "caste_certificate",
+     "operator": "manual",
+     "value": null,
+     "unit": null,
+     "description": "Scheduled Caste status and all eligibility criteria are verified by the authorised channelizing agency (SCA/CA), which is solely responsible for verification; NSFDC may re-verify.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/eligibility-requirements",
+     "source_document": "NSFDC eligibility requirements page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Purpose of financing",
+     "field": "purpose_category",
+     "operator": "==",
+     "value": "income_generating",
+     "unit": null,
+     "description": "The scheme finances income generating activities.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Loan up to 90% of project cost",
+     "field": "loan_to_project_cost_ratio",
+     "operator": "<=",
+     "value": 0.9,
+     "unit": "ratio",
+     "description": "NSFDC provides loans up to 90% of the project cost.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "State applicability",
+     "field": "state",
+     "operator": "in",
+     "value": [
+      "ALL_INDIA"
+     ],
+     "unit": null,
+     "description": "No state restriction is stated on the official scheme page; delivery is through channelizing agencies.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Project cost",
+     "field": "project_cost",
+     "operator": "between",
+     "value": {
+      "min": 140000,
+      "max": 5000000,
+      "minExclusive": true
+     },
+     "unit": "INR",
+     "description": "Units costing more than ₹1.40 lakh and up to ₹50.00 lakh.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Loan amount",
+     "field": "loan_required",
+     "operator": "between",
+     "value": {
+      "min": 125000,
+      "max": 4500000,
+      "minExclusive": true
+     },
+     "unit": "INR",
+     "description": "Term loan is above ₹1.25 lakh and up to ₹45 lakh per unit.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    }
+   ]
+  },
+  {
+   "category": "income_generating",
+   "beneficiary_category": [
+    "SC"
+   ],
+   "state_scope": "ALL_INDIA",
+   "district_scope": "ALL",
+   "coverage_percentage": 90,
+   "required_documents": null,
+   "application_process": "Apply through the official PM-SURAJ portal (as directed on the NSFDC scheme page). Proposals are routed via State Channelizing Agencies / Channelizing Agencies, which verify eligibility.",
+   "official_application_url": "https://pmsuraj.dosje.gov.in/",
+   "applicable_activities": [
+    "Agricultural Land Purchase",
+    "Hatcheries",
+    "Duckery",
+    "Goat Rearing",
+    "Sheep Farming",
+    "Fisheries",
+    "Ornamental Fish Rearing",
+    "Tractors",
+    "Power Tillers",
+    "Cultivation & Processing of Medicinal Plants",
+    "Honey Bee Cultivation",
+    "Irrigation Borewells/Minor Irrigation",
+    "Agricultural Implements",
+    "Horticulture",
+    "Sericulture",
+    "Layers / Broilers",
+    "Cows / Buffaloes",
+    "Piggery",
+    "Aquaculture",
+    "Floriculture",
+    "Automobile Repair / Servicing Units",
+    "Brick Making",
+    "Bicycle Repairing Shops",
+    "Bicycle Seat Cover Making",
+    "Biogas Plant",
+    "Candle Manufacturing",
+    "Car Upholstery & Seat Making",
+    "Cement Solid Blocks",
+    "Coir Industry",
+    "Carpet Manufacturing",
+    "Copperware/Utensils Manufacturing",
+    "Exercise Books & Registers Making",
+    "Readymade Garment Manufacturing",
+    "Ginger & Turmeric Processing",
+    "Granite Tiles",
+    "Handmade Paper",
+    "Ornaments Polishing Units",
+    "Stone Crushing",
+    "Supari Processing",
+    "Printing Press",
+    "Furniture Making",
+    "Flour Mill",
+    "Soft Toys Making",
+    "Handlooms/Powerlooms",
+    "Embroidery/Knitting",
+    "Woollen Garments/Shawls Making",
+    "Hosiery Units",
+    "Jute Fabrics/Bags",
+    "Leather Garments",
+    "Leather Processing",
+    "Leather & Rexine Articles",
+    "Lime Kilns",
+    "Plastic Bags Manufacturing",
+    "Potteries",
+    "Handicrafts Making",
+    "Pouch Making",
+    "Incense Stick Making",
+    "Rubber Industry",
+    "Shoe/Chappal Manufacturing",
+    "Umbrella Making",
+    "Fiberglass Manufacturing",
+    "Mineral Water Bottling Plant",
+    "Oil Mills",
+    "Saw Mills",
+    "Footwear Manufacturing",
+    "Silver Ornaments Making",
+    "Bakery",
+    "Bamboo Furniture Making",
+    "Battery Making",
+    "Departmental Stores",
+    "Beautician",
+    "Band Party",
+    "Fish/Meat Shops",
+    "Petty Shops",
+    "Diagnostic Center / Blood Bank",
+    "Book Binding/Book Shops",
+    "Cards Shop",
+    "Clinical Labs",
+    "Stationery Shops",
+    "Cloth Merchant",
+    "Computer Centres",
+    "Computer Hardware & Servicing",
+    "Dental Clinics",
+    "Desktop Printing",
+    "Driving School",
+    "Eye Clinics",
+    "Food Packing Unit",
+    "Gas Agency",
+    "Gem Stone Cutting & Polishing",
+    "Photography/Videography",
+    "Shopping Complex",
+    "Shuttering",
+    "Spice Grinding",
+    "Spray Painting",
+    "Silk Weaving",
+    "Steel Fabrication",
+    "Sweet Shop",
+    "Tailoring",
+    "Water Sports Equipments",
+    "Chemist Shops",
+    "Wooden/Steel Furniture",
+    "Dhabas/Mini Hotels",
+    "Tourist Lodge",
+    "Electrical Items Shop",
+    "Hardware Shop",
+    "Electrical Winding",
+    "Welding & Refrigeration",
+    "Vegetable Vending",
+    "Watch Repair/Sales Shop",
+    "Bangle/Cosmetic Shop",
+    "Digital Mixing Lab",
+    "Seeds/Fertilizers/Pesticides Shops",
+    "Auto Rickshaws/Auto Load Carrier",
+    "Light Commercial Vehicles/Mini Buses",
+    "Jeeps/Car Taxies",
+    "Earth Movers (JCB)",
+    "Laundry/Dry-cleaning Shops",
+    "Machine Shops",
+    "Marble Polishing",
+    "Milk Chilling Centres/Booths",
+    "Garments Shop",
+    "Mobile Crane",
+    "Nursing Home/Hospitals",
+    "Nursery School",
+    "Passenger/Fishing Boats",
+    "Public Address System",
+    "Pump Set/Minor Irrigation",
+    "Ropeway",
+    "Sales & Servicing of Electric Items",
+    "Supplying Unit",
+    "Commercial Centre (STD/Photocopier/Scanner)",
+    "Tannery",
+    "Tent House/Decorators",
+    "Transport Vehicles (Autos, Taxies, LCVs, Buses, Trucks)",
+    "Travel Agency",
+    "TV/Audio-Video/Refrigerator/AC Repair",
+    "Typing School",
+    "Tyre Retreading",
+    "Tyre Servicing & Vulcanising",
+    "Xerox/Typing/Lamination Centre",
+    "Internet Cafe",
+    "Cable TV"
+   ],
+   "source_organization": "NSFDC",
+   "source_url": "https://nsfdc.nic.in/scheme",
+   "source_document": "NSFDC loan/credit schemes page (nsfdc.nic.in/scheme)",
+   "last_verified_at": "2026-09-22",
+   "data_updated_at": "2026-09-21",
+   "data_status": "VERIFIED",
+   "search_aliases": [
+    "dairy",
+    "dairy farming",
+    "milk",
+    "cattle",
+    "livestock",
+    "animal husbandry",
+    "small business",
+    "self employment",
+    "shop",
+    "trade",
+    "start a business"
+   ],
+   "eligibility_summary": "Scheduled Caste beneficiaries with annual family income up to ₹5.00 lakh (effective 7 Jan 2026), for income-generating activities; eligibility is verified by the authorised channelizing agency.",
+   "id": "aajeevika-micro-finance-yojana",
+   "scheme_code": "NSFDC-AMY",
+   "name": "Aajeevika Micro-Finance Yojana",
+   "purpose": "Prompt, need-based micro finance for small/micro business activities through selected NBFC-MFIs.",
+   "description": "Micro finance to eligible Scheduled Caste persons through selected NBFC-MFIs for small/micro business activities. Loan up to 90% (up to ₹1.25 lakh) for projects costing up to ₹1.40 lakh.",
+   "max_project_cost": 140000,
+   "max_loan_amount": 125000,
+   "interest_rate": 15,
+   "interest_rate_text": "Beneficiary pays 15% p.a. (NSFDC charges 5% p.a. from the NBFC-MFIs).",
+   "repayment_period": "Quarterly instalments of up to 3 years from the date of each disbursement, including the moratorium.",
+   "max_repayment_months": 36,
+   "moratorium": "3 months (included in the repayment period)",
+   "moratorium_months": 3,
+   "rules": [
+    {
+     "criterion": "Beneficiary category",
+     "field": "beneficiary_category",
+     "operator": "==",
+     "value": "SC",
+     "unit": null,
+     "description": "The beneficiary must belong to the Scheduled Caste (SC) community.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/eligibility-requirements",
+     "source_document": "NSFDC eligibility requirements page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Annual family income",
+     "field": "annual_family_income",
+     "operator": "<=",
+     "value": 500000,
+     "unit": "INR/year",
+     "description": "Annual family income must not exceed ₹5.00 lakh for credit/loan-based schemes (rural and urban).",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/eligibility-requirements",
+     "source_document": "NSFDC eligibility requirements page",
+     "effective_from": "2026-01-07",
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Scheduled Caste status verification",
+     "field": "caste_certificate",
+     "operator": "manual",
+     "value": null,
+     "unit": null,
+     "description": "Scheduled Caste status and all eligibility criteria are verified by the authorised channelizing agency (SCA/CA), which is solely responsible for verification; NSFDC may re-verify.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/eligibility-requirements",
+     "source_document": "NSFDC eligibility requirements page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Purpose of financing",
+     "field": "purpose_category",
+     "operator": "==",
+     "value": "income_generating",
+     "unit": null,
+     "description": "The scheme finances income generating activities.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Loan up to 90% of project cost",
+     "field": "loan_to_project_cost_ratio",
+     "operator": "<=",
+     "value": 0.9,
+     "unit": "ratio",
+     "description": "NSFDC provides loans up to 90% of the project cost.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "State applicability",
+     "field": "state",
+     "operator": "in",
+     "value": [
+      "ALL_INDIA"
+     ],
+     "unit": null,
+     "description": "No state restriction is stated on the official scheme page; delivery is through channelizing agencies.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Project cost",
+     "field": "project_cost",
+     "operator": "<=",
+     "value": 140000,
+     "unit": "INR",
+     "description": "Projects costing up to ₹1.40 lakh.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Loan amount",
+     "field": "loan_required",
+     "operator": "<=",
+     "value": 125000,
+     "unit": "INR",
+     "description": "Loan up to ₹1.25 lakh.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    }
+   ]
+  },
+  {
+   "category": "income_generating",
+   "beneficiary_category": [
+    "SC"
+   ],
+   "state_scope": "ALL_INDIA",
+   "district_scope": "ALL",
+   "coverage_percentage": 90,
+   "required_documents": null,
+   "application_process": "Apply through the official PM-SURAJ portal (as directed on the NSFDC scheme page). Proposals are routed via State Channelizing Agencies / Channelizing Agencies, which verify eligibility.",
+   "official_application_url": "https://pmsuraj.dosje.gov.in/",
+   "applicable_activities": [
+    "Agricultural Land Purchase",
+    "Hatcheries",
+    "Duckery",
+    "Goat Rearing",
+    "Sheep Farming",
+    "Fisheries",
+    "Ornamental Fish Rearing",
+    "Tractors",
+    "Power Tillers",
+    "Cultivation & Processing of Medicinal Plants",
+    "Honey Bee Cultivation",
+    "Irrigation Borewells/Minor Irrigation",
+    "Agricultural Implements",
+    "Horticulture",
+    "Sericulture",
+    "Layers / Broilers",
+    "Cows / Buffaloes",
+    "Piggery",
+    "Aquaculture",
+    "Floriculture",
+    "Automobile Repair / Servicing Units",
+    "Brick Making",
+    "Bicycle Repairing Shops",
+    "Bicycle Seat Cover Making",
+    "Biogas Plant",
+    "Candle Manufacturing",
+    "Car Upholstery & Seat Making",
+    "Cement Solid Blocks",
+    "Coir Industry",
+    "Carpet Manufacturing",
+    "Copperware/Utensils Manufacturing",
+    "Exercise Books & Registers Making",
+    "Readymade Garment Manufacturing",
+    "Ginger & Turmeric Processing",
+    "Granite Tiles",
+    "Handmade Paper",
+    "Ornaments Polishing Units",
+    "Stone Crushing",
+    "Supari Processing",
+    "Printing Press",
+    "Furniture Making",
+    "Flour Mill",
+    "Soft Toys Making",
+    "Handlooms/Powerlooms",
+    "Embroidery/Knitting",
+    "Woollen Garments/Shawls Making",
+    "Hosiery Units",
+    "Jute Fabrics/Bags",
+    "Leather Garments",
+    "Leather Processing",
+    "Leather & Rexine Articles",
+    "Lime Kilns",
+    "Plastic Bags Manufacturing",
+    "Potteries",
+    "Handicrafts Making",
+    "Pouch Making",
+    "Incense Stick Making",
+    "Rubber Industry",
+    "Shoe/Chappal Manufacturing",
+    "Umbrella Making",
+    "Fiberglass Manufacturing",
+    "Mineral Water Bottling Plant",
+    "Oil Mills",
+    "Saw Mills",
+    "Footwear Manufacturing",
+    "Silver Ornaments Making",
+    "Bakery",
+    "Bamboo Furniture Making",
+    "Battery Making",
+    "Departmental Stores",
+    "Beautician",
+    "Band Party",
+    "Fish/Meat Shops",
+    "Petty Shops",
+    "Diagnostic Center / Blood Bank",
+    "Book Binding/Book Shops",
+    "Cards Shop",
+    "Clinical Labs",
+    "Stationery Shops",
+    "Cloth Merchant",
+    "Computer Centres",
+    "Computer Hardware & Servicing",
+    "Dental Clinics",
+    "Desktop Printing",
+    "Driving School",
+    "Eye Clinics",
+    "Food Packing Unit",
+    "Gas Agency",
+    "Gem Stone Cutting & Polishing",
+    "Photography/Videography",
+    "Shopping Complex",
+    "Shuttering",
+    "Spice Grinding",
+    "Spray Painting",
+    "Silk Weaving",
+    "Steel Fabrication",
+    "Sweet Shop",
+    "Tailoring",
+    "Water Sports Equipments",
+    "Chemist Shops",
+    "Wooden/Steel Furniture",
+    "Dhabas/Mini Hotels",
+    "Tourist Lodge",
+    "Electrical Items Shop",
+    "Hardware Shop",
+    "Electrical Winding",
+    "Welding & Refrigeration",
+    "Vegetable Vending",
+    "Watch Repair/Sales Shop",
+    "Bangle/Cosmetic Shop",
+    "Digital Mixing Lab",
+    "Seeds/Fertilizers/Pesticides Shops",
+    "Auto Rickshaws/Auto Load Carrier",
+    "Light Commercial Vehicles/Mini Buses",
+    "Jeeps/Car Taxies",
+    "Earth Movers (JCB)",
+    "Laundry/Dry-cleaning Shops",
+    "Machine Shops",
+    "Marble Polishing",
+    "Milk Chilling Centres/Booths",
+    "Garments Shop",
+    "Mobile Crane",
+    "Nursing Home/Hospitals",
+    "Nursery School",
+    "Passenger/Fishing Boats",
+    "Public Address System",
+    "Pump Set/Minor Irrigation",
+    "Ropeway",
+    "Sales & Servicing of Electric Items",
+    "Supplying Unit",
+    "Commercial Centre (STD/Photocopier/Scanner)",
+    "Tannery",
+    "Tent House/Decorators",
+    "Transport Vehicles (Autos, Taxies, LCVs, Buses, Trucks)",
+    "Travel Agency",
+    "TV/Audio-Video/Refrigerator/AC Repair",
+    "Typing School",
+    "Tyre Retreading",
+    "Tyre Servicing & Vulcanising",
+    "Xerox/Typing/Lamination Centre",
+    "Internet Cafe",
+    "Cable TV"
+   ],
+   "source_organization": "NSFDC",
+   "source_url": "https://nsfdc.nic.in/scheme",
+   "source_document": "NSFDC loan/credit schemes page (nsfdc.nic.in/scheme)",
+   "last_verified_at": "2026-09-22",
+   "data_updated_at": "2026-09-21",
+   "data_status": "VERIFIED",
+   "search_aliases": [
+    "dairy",
+    "dairy farming",
+    "milk",
+    "cattle",
+    "livestock",
+    "animal husbandry",
+    "small business",
+    "self employment",
+    "shop",
+    "trade",
+    "start a business"
+   ],
+   "eligibility_summary": "Scheduled Caste beneficiaries with annual family income up to ₹5.00 lakh (effective 7 Jan 2026), for income-generating activities; eligibility is verified by the authorised channelizing agency.",
+   "id": "udyam-nidhi-yojana",
+   "scheme_code": "NSFDC-UNY",
+   "name": "Udyam Nidhi Yojana (UNY)",
+   "purpose": "Loans for small/micro activities costing up to ₹5.00 lakh, through cooperative societies/banks and small finance banks.",
+   "description": "Loans for projects/units costing up to ₹5.00 lakh through Cooperative Societies, Cooperative Banks and Small Finance Banks. Loan up to 90% of project cost, i.e. up to ₹4.50 lakh.",
+   "max_project_cost": 500000,
+   "max_loan_amount": 450000,
+   "interest_rate": null,
+   "interest_rate_options": [
+    {
+     "label": "Cooperative Banks/Societies",
+     "rate": 13
+    },
+    {
+     "label": "Small Finance Banks",
+     "rate": 15
+    }
+   ],
+   "interest_rate_text": "Beneficiary pays 13% p.a. via Cooperative Banks/Societies or 15% p.a. via Small Finance Banks (NSFDC charges 5% p.a.).",
+   "repayment_period": "Quarterly or half-yearly instalments within a maximum of 5 years, including the moratorium.",
+   "max_repayment_months": 60,
+   "moratorium": "3 months (included in the repayment period)",
+   "moratorium_months": 3,
+   "rules": [
+    {
+     "criterion": "Beneficiary category",
+     "field": "beneficiary_category",
+     "operator": "==",
+     "value": "SC",
+     "unit": null,
+     "description": "The beneficiary must belong to the Scheduled Caste (SC) community.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/eligibility-requirements",
+     "source_document": "NSFDC eligibility requirements page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Annual family income",
+     "field": "annual_family_income",
+     "operator": "<=",
+     "value": 500000,
+     "unit": "INR/year",
+     "description": "Annual family income must not exceed ₹5.00 lakh for credit/loan-based schemes (rural and urban).",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/eligibility-requirements",
+     "source_document": "NSFDC eligibility requirements page",
+     "effective_from": "2026-01-07",
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Scheduled Caste status verification",
+     "field": "caste_certificate",
+     "operator": "manual",
+     "value": null,
+     "unit": null,
+     "description": "Scheduled Caste status and all eligibility criteria are verified by the authorised channelizing agency (SCA/CA), which is solely responsible for verification; NSFDC may re-verify.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/eligibility-requirements",
+     "source_document": "NSFDC eligibility requirements page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Purpose of financing",
+     "field": "purpose_category",
+     "operator": "==",
+     "value": "income_generating",
+     "unit": null,
+     "description": "The scheme finances income generating activities.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Loan up to 90% of project cost",
+     "field": "loan_to_project_cost_ratio",
+     "operator": "<=",
+     "value": 0.9,
+     "unit": "ratio",
+     "description": "NSFDC provides loans up to 90% of the project cost.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "State applicability",
+     "field": "state",
+     "operator": "in",
+     "value": [
+      "ALL_INDIA"
+     ],
+     "unit": null,
+     "description": "No state restriction is stated on the official scheme page; delivery is through channelizing agencies.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Project cost",
+     "field": "project_cost",
+     "operator": "<=",
+     "value": 500000,
+     "unit": "INR",
+     "description": "Projects/units costing up to ₹5.00 lakh.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Loan amount",
+     "field": "loan_required",
+     "operator": "<=",
+     "value": 450000,
+     "unit": "INR",
+     "description": "Loan up to ₹4.50 lakh.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    }
+   ]
+  },
+  {
+   "id": "educational-loan-scheme",
+   "scheme_code": "NSFDC-ELS",
+   "name": "Educational Loan Scheme (ELS)",
+   "purpose": "Loans for regular full-time professional/technical courses in India or abroad.",
+   "category": "education",
+   "beneficiary_category": [
+    "SC"
+   ],
+   "state_scope": "ALL_INDIA",
+   "district_scope": "ALL",
+   "description": "Educational loans for eligible students pursuing regular full-time professional/technical courses approved by the Government, in India or abroad. Up to ₹40 lakh or 90% of course fee, whichever is less. Covers listed courses such as engineering, medical, dental, management, law, nursing and doctoral studies.",
+   "eligibility_summary": "Scheduled Caste students (annual family income up to ₹5.00 lakh, effective 7 Jan 2026) pursuing recognised full-time professional/technical courses; eligibility is verified by the authorised channelizing agency.",
+   "max_loan_amount": 4000000,
+   "coverage_percentage": 90,
+   "interest_rate": 6.5,
+   "interest_rate_text": "Beneficiary pays 6.5% p.a. (NSFDC charges 2.5% p.a. from the CAs).",
+   "repayment_period": "Up to 12 years where repayment has not started; up to 10 years where the loan is disbursed and repayment has started.",
+   "max_repayment_months": 144,
+   "moratorium": "Course period plus 1 year where repayment has not started; up to 6 months where the loan is disbursed and repayment has started.",
+   "moratorium_months": null,
+   "required_documents": null,
+   "application_process": "Apply through the official PM-SURAJ portal (as directed on the NSFDC scheme page).",
+   "official_application_url": "https://pmsuraj.dosje.gov.in/",
+   "applicable_activities": [
+    "Engineering (Diploma/B.Tech/B.E/M.Tech/M.E)",
+    "Architecture",
+    "Medical (MBBS/MD/MS)",
+    "Pharmacy",
+    "Dental",
+    "Nursing",
+    "Information Technology (BCA/MCA)",
+    "Management (BBA/MBA)",
+    "Law",
+    "Education (B.Ed/M.Ed)",
+    "Chartered Accountancy",
+    "Company Secretaryship",
+    "Doctoral studies (M.Phil/PhD)"
+   ],
+   "source_organization": "NSFDC",
+   "source_url": "https://nsfdc.nic.in/scheme",
+   "source_document": "NSFDC loan/credit schemes page (nsfdc.nic.in/scheme)",
+   "last_verified_at": "2026-09-22",
+   "data_updated_at": "2026-09-21",
+   "data_status": "VERIFIED",
+   "search_aliases": [
+    "education loan",
+    "student loan",
+    "college fees",
+    "higher studies",
+    "course fee",
+    "tuition"
+   ],
+   "rules": [
+    {
+     "criterion": "Beneficiary category",
+     "field": "beneficiary_category",
+     "operator": "==",
+     "value": "SC",
+     "unit": null,
+     "description": "The beneficiary must belong to the Scheduled Caste (SC) community.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/eligibility-requirements",
+     "source_document": "NSFDC eligibility requirements page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Annual family income",
+     "field": "annual_family_income",
+     "operator": "<=",
+     "value": 500000,
+     "unit": "INR/year",
+     "description": "Annual family income must not exceed ₹5.00 lakh for credit/loan-based schemes (rural and urban).",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/eligibility-requirements",
+     "source_document": "NSFDC eligibility requirements page",
+     "effective_from": "2026-01-07",
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Scheduled Caste status verification",
+     "field": "caste_certificate",
+     "operator": "manual",
+     "value": null,
+     "unit": null,
+     "description": "Scheduled Caste status and all eligibility criteria are verified by the authorised channelizing agency (SCA/CA), which is solely responsible for verification; NSFDC may re-verify.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/eligibility-requirements",
+     "source_document": "NSFDC eligibility requirements page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Purpose of financing",
+     "field": "purpose_category",
+     "operator": "==",
+     "value": "education",
+     "unit": null,
+     "description": "The scheme finances education activities.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Loan up to 90% of project cost",
+     "field": "loan_to_project_cost_ratio",
+     "operator": "<=",
+     "value": 0.9,
+     "unit": "ratio",
+     "description": "NSFDC provides loans up to 90% of the project cost.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "State applicability",
+     "field": "state",
+     "operator": "in",
+     "value": [
+      "ALL_INDIA"
+     ],
+     "unit": null,
+     "description": "No state restriction is stated on the official scheme page; delivery is through channelizing agencies.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Education level",
+     "field": "education_level",
+     "operator": "in",
+     "value": [
+      "diploma",
+      "undergraduate",
+      "graduate",
+      "bachelors",
+      "postgraduate",
+      "masters",
+      "doctoral",
+      "doctorate",
+      "phd"
+     ],
+     "unit": null,
+     "description": "Covers professional/technical courses from diploma level up to doctoral studies.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Recognised professional/technical course",
+     "field": "course_recognition",
+     "operator": "manual",
+     "value": null,
+     "unit": null,
+     "description": "The course must be a regular full-time professional/technical course approved by the Government at a recognised institution; the authorised agency verifies this.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    },
+    {
+     "criterion": "Loan amount",
+     "field": "loan_required",
+     "operator": "<=",
+     "value": 4000000,
+     "unit": "INR",
+     "description": "Up to ₹40 lakh or 90% of the course fee, whichever is less.",
+     "source_organization": "NSFDC",
+     "source_url": "https://nsfdc.nic.in/scheme",
+     "source_document": "NSFDC loan/credit schemes page",
+     "effective_from": null,
+     "last_verified_at": "2026-09-22",
+     "data_status": "VERIFIED",
+     "amended_from_time_to_time": false
+    }
+   ]
+  }
+ ],
+ "indicative_activities": {
+  "agriculture_allied": [
+   "Agricultural Land Purchase",
+   "Hatcheries",
+   "Duckery",
+   "Goat Rearing",
+   "Sheep Farming",
+   "Fisheries",
+   "Ornamental Fish Rearing",
+   "Tractors",
+   "Power Tillers",
+   "Cultivation & Processing of Medicinal Plants",
+   "Honey Bee Cultivation",
+   "Irrigation Borewells/Minor Irrigation",
+   "Agricultural Implements",
+   "Horticulture",
+   "Sericulture",
+   "Layers / Broilers",
+   "Cows / Buffaloes",
+   "Piggery",
+   "Aquaculture",
+   "Floriculture"
+  ],
+  "small_industry": [
+   "Automobile Repair / Servicing Units",
+   "Brick Making",
+   "Bicycle Repairing Shops",
+   "Bicycle Seat Cover Making",
+   "Biogas Plant",
+   "Candle Manufacturing",
+   "Car Upholstery & Seat Making",
+   "Cement Solid Blocks",
+   "Coir Industry",
+   "Carpet Manufacturing",
+   "Copperware/Utensils Manufacturing",
+   "Exercise Books & Registers Making",
+   "Readymade Garment Manufacturing",
+   "Ginger & Turmeric Processing",
+   "Granite Tiles",
+   "Handmade Paper",
+   "Ornaments Polishing Units",
+   "Stone Crushing",
+   "Supari Processing",
+   "Printing Press",
+   "Furniture Making",
+   "Flour Mill",
+   "Soft Toys Making",
+   "Handlooms/Powerlooms",
+   "Embroidery/Knitting",
+   "Woollen Garments/Shawls Making",
+   "Hosiery Units",
+   "Jute Fabrics/Bags",
+   "Leather Garments",
+   "Leather Processing",
+   "Leather & Rexine Articles",
+   "Lime Kilns",
+   "Plastic Bags Manufacturing",
+   "Potteries",
+   "Handicrafts Making",
+   "Pouch Making",
+   "Incense Stick Making",
+   "Rubber Industry",
+   "Shoe/Chappal Manufacturing",
+   "Umbrella Making",
+   "Fiberglass Manufacturing",
+   "Mineral Water Bottling Plant",
+   "Oil Mills",
+   "Saw Mills",
+   "Footwear Manufacturing",
+   "Silver Ornaments Making",
+   "Bakery",
+   "Bamboo Furniture Making",
+   "Battery Making"
+  ],
+  "services_business": [
+   "Departmental Stores",
+   "Beautician",
+   "Band Party",
+   "Fish/Meat Shops",
+   "Petty Shops",
+   "Diagnostic Center / Blood Bank",
+   "Book Binding/Book Shops",
+   "Cards Shop",
+   "Clinical Labs",
+   "Stationery Shops",
+   "Cloth Merchant",
+   "Computer Centres",
+   "Computer Hardware & Servicing",
+   "Dental Clinics",
+   "Desktop Printing",
+   "Driving School",
+   "Eye Clinics",
+   "Food Packing Unit",
+   "Gas Agency",
+   "Gem Stone Cutting & Polishing",
+   "Photography/Videography",
+   "Shopping Complex",
+   "Shuttering",
+   "Spice Grinding",
+   "Spray Painting",
+   "Silk Weaving",
+   "Steel Fabrication",
+   "Sweet Shop",
+   "Tailoring",
+   "Water Sports Equipments",
+   "Chemist Shops",
+   "Wooden/Steel Furniture",
+   "Dhabas/Mini Hotels",
+   "Tourist Lodge",
+   "Electrical Items Shop",
+   "Hardware Shop",
+   "Electrical Winding",
+   "Welding & Refrigeration",
+   "Vegetable Vending",
+   "Watch Repair/Sales Shop",
+   "Bangle/Cosmetic Shop",
+   "Digital Mixing Lab",
+   "Seeds/Fertilizers/Pesticides Shops",
+   "Auto Rickshaws/Auto Load Carrier",
+   "Light Commercial Vehicles/Mini Buses",
+   "Jeeps/Car Taxies",
+   "Earth Movers (JCB)",
+   "Laundry/Dry-cleaning Shops",
+   "Machine Shops",
+   "Marble Polishing",
+   "Milk Chilling Centres/Booths",
+   "Garments Shop",
+   "Mobile Crane",
+   "Nursing Home/Hospitals",
+   "Nursery School",
+   "Passenger/Fishing Boats",
+   "Public Address System",
+   "Pump Set/Minor Irrigation",
+   "Ropeway",
+   "Sales & Servicing of Electric Items",
+   "Supplying Unit",
+   "Commercial Centre (STD/Photocopier/Scanner)",
+   "Tannery",
+   "Tent House/Decorators",
+   "Transport Vehicles (Autos, Taxies, LCVs, Buses, Trucks)",
+   "Travel Agency",
+   "TV/Audio-Video/Refrigerator/AC Repair",
+   "Typing School",
+   "Tyre Retreading",
+   "Tyre Servicing & Vulcanising",
+   "Xerox/Typing/Lamination Centre",
+   "Internet Cafe",
+   "Cable TV"
+  ]
+ },
+ "source_meta": {
+  "schemesetu": {
+   "project": "SchemeSetu",
+   "source_notes": "Extracted directly from the backend's Python source-of-truth modules (app/ingestion/nsfdc/verified_dataset.py, app/ingestion/nsfdc/verified_partners.py, seed/demo_partners.py). Nothing here is re-typed by hand.",
+   "last_verified_schemes": "2026-09-22",
+   "nsfdc_page_last_updated": "2026-09-21",
+   "national_partner_count_note": "NSFDC's own evaluation report (2020) states the network comprised 37 State Channelizing Agencies and 55 other Channelizing Agencies (92 total) nationally at that time; NSFDC does not publish a current, structured, geocoded directory, so per-partner records beyond the ones above are not available as verified data."
+  },
+  "nbcfdc": {
+   "dataset_name": "NBCFDC Channel Partners (Verified from Official Source)",
+   "source": "https://nbcfdc.gov.in/nbcfdc/web/en/sca and https://nbcfdc.gov.in/nbcfdc/web/en/bank",
+   "source_authority": "National Backward Classes Finance & Development Corporation (NBCFDC), Ministry of Social Justice and Empowerment, Govt. of India",
+   "retrieved_on": "2026-09-24",
+   "total_verified_partners": 103,
+   "note_on_discrepancy": "A dashboard screenshot supplied by the user showed 161 Channel Partners. Only 103 could be verified directly from NBCFDC's own live 'SCAs' and 'Bank' pages as of retrieval. The remaining ~58 could not be confirmed from a public NBCFDC page (e.g. its NBFC-MFI empanelment list is referenced but not published as a browsable table) or may originate from a separate/private compilation (e.g. the SchemeSetu hackathon project's own analytics, not NBCFDC's official site). This total (103) should be treated as the verifiable floor, not a contradiction of 161.",
+   "categories": {
+    "State Channelizing Agencies (SCAs)": 44,
+    "Public Sector Banks (PSBs)": 12,
+    "Regional Rural Banks (RRBs)": 44,
+    "Other (incl. 1 Small Finance Bank, 1 Co-op Bank, 1 NBFC)": 3
+   }
+  }
+ }
+}

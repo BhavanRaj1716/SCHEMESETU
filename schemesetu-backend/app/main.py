@@ -2,6 +2,7 @@ import logging
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.gzip import GZipMiddleware
 
 from app.api.errors import register_error_handlers
 from app.api.routes import auth, calculator, health, partners, recommendations, saved, schemes
@@ -21,6 +22,8 @@ app = FastAPI(
     openapi_url=None if is_prod else "/openapi.json",
 )
 
+# GZip all responses ≥ 500 bytes (JSON compresses ~70%, woff2/images skip automatically)
+app.add_middleware(GZipMiddleware, minimum_size=500)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.cors_origins,  # explicit origins from FRONTEND_URL; never "*"

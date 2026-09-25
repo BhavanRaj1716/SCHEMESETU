@@ -139,12 +139,20 @@ export default function PartnerMap({
     }
   }, [selectedPartner]);
 
-  // Center on selected partner or center of India
+  // Partners that have valid coordinates — Leaflet crashes on null lat/lng
+  const mappablePartners = useMemo(
+    () => partners.filter((p) => p.latitude != null && p.longitude != null),
+    [partners]
+  );
+
+  // Center on selected partner (if it has coords) or first mappable partner or India center
   const initialCenter: [number, number] = useMemo(() => {
-    if (selectedPartner) return [selectedPartner.latitude, selectedPartner.longitude];
-    if (partners.length > 0) return [partners[0].latitude, partners[0].longitude];
+    if (selectedPartner?.latitude != null && selectedPartner?.longitude != null)
+      return [selectedPartner.latitude, selectedPartner.longitude];
+    if (mappablePartners.length > 0)
+      return [mappablePartners[0].latitude, mappablePartners[0].longitude];
     return [20.5937, 78.9629]; // India Center
-  }, [selectedPartner, partners]);
+  }, [selectedPartner, mappablePartners]);
 
   const schemeLabels: Record<string, string> = {
     mfs: 'MFS (₹1.40L)',
@@ -203,7 +211,7 @@ export default function PartnerMap({
           {/* Overlay 1: Channel Partner Markers */}
           <Overlay checked name="Channel Partners">
             <LayerGroup>
-              {partners.map((partner) => {
+              {mappablePartners.map((partner) => {
                 const isSelected = selectedPartner?.id === partner.id;
 
                 return (
@@ -309,7 +317,7 @@ export default function PartnerMap({
           </Overlay>
 
           {/* Overlay 2: Search Radius Visualization Circle */}
-          {radiusKm && selectedPartner && (
+          {radiusKm && selectedPartner?.latitude != null && selectedPartner?.longitude != null && (
             <Overlay checked name={`Search Radius (${radiusKm} km)`}>
               <LayerGroup>
                 <Circle

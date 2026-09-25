@@ -1,21 +1,21 @@
 'use client';
 
-import { motion } from 'framer-motion';
-
 export function HeroIllustration() {
   return (
     <div className="relative w-full max-w-lg mx-auto aspect-[4/3] flex items-center justify-center">
+      <style>{`
+        @keyframes spin-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        @keyframes spin-slow-rev { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
+        @keyframes bob-up { 0%,100% { transform: translateY(-4px); } 50% { transform: translateY(4px); } }
+        @keyframes bob-down { 0%,100% { transform: translateY(4px); } 50% { transform: translateY(-4px); } }
+        .hero-ring-1 { animation: spin-slow 60s linear infinite; }
+        .hero-ring-2 { animation: spin-slow-rev 45s linear infinite; }
+        .hero-badge-up { animation: bob-up 4s ease-in-out infinite; }
+        .hero-badge-down { animation: bob-down 3.5s ease-in-out infinite; }
+      `}</style>
       {/* Background Decorative Rings */}
-      <motion.div
-        animate={{ rotate: 360 }}
-        transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
-        className="absolute inset-0 rounded-full border border-white/10"
-      />
-      <motion.div
-        animate={{ rotate: -360 }}
-        transition={{ duration: 45, repeat: Infinity, ease: 'linear' }}
-        className="absolute inset-8 rounded-full border border-dashed border-white/15"
-      />
+      <div className="hero-ring-1 absolute inset-0 rounded-full border border-white/10" />
+      <div className="hero-ring-2 absolute inset-8 rounded-full border border-dashed border-white/15" />
 
       {/* Main SVG Composition */}
       <svg
@@ -128,23 +128,19 @@ export function HeroIllustration() {
       </svg>
 
       {/* Floating Animated Badges */}
-      <motion.div
-        animate={{ y: [-4, 4, -4] }}
-        transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-        className="absolute -top-2 left-6 bg-white/10 backdrop-blur-md border border-white/20 px-3 py-1.5 rounded-full shadow-lg text-[11px] text-white flex items-center gap-1.5"
+      <div
+        className="hero-badge-up absolute -top-2 left-6 bg-white/10 backdrop-blur-md border border-white/20 px-3 py-1.5 rounded-full shadow-lg text-[11px] text-white flex items-center gap-1.5"
       >
         <span className="w-2 h-2 rounded-full bg-forest-green animate-pulse" />
         Official NSFDC Schemes
-      </motion.div>
+      </div>
 
-      <motion.div
-        animate={{ y: [4, -4, 4] }}
-        transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
-        className="absolute -bottom-2 right-6 bg-white/10 backdrop-blur-md border border-white/20 px-3 py-1.5 rounded-full shadow-lg text-[11px] text-white flex items-center gap-1.5"
+      <div
+        className="hero-badge-down absolute -bottom-2 right-6 bg-white/10 backdrop-blur-md border border-white/20 px-3 py-1.5 rounded-full shadow-lg text-[11px] text-white flex items-center gap-1.5"
       >
         <span className="w-2 h-2 rounded-full bg-muted-ochre" />
         Zero Intermediary Handoff
-      </motion.div>
+      </div>
     </div>
   );
 }

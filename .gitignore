@@ -29,3 +29,11 @@ service-account*.json
 .DS_Store
 *.log
 .kilo/
+
+# AI Models & Large Binary Weights
+schemesetu_e5_*
+*.safetensors
+*.pt
+*.pth
+*.bin
+

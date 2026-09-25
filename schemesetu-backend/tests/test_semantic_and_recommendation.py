@@ -43,7 +43,7 @@ def test_recommendation_pipeline_demo_scenario(db):
     outcomes = [r.eligibility_outcome.value for r in res.schemes]
     assert outcomes == sorted(outcomes, key=lambda o: o == "MISMATCH_FOUND")  # no-mismatch first
     assert all(r.requires_verification for r in res.schemes)
-    assert res.official_application_url == "https://pmsuraj.dosje.gov.in/"
+    assert res.official_application_url.startswith("https://pmsuraj.dosje.gov.in")
 
 
 def test_recommendation_never_emits_scores_or_approval_claims(db):

@@ -21,6 +21,7 @@ import {
   Banknote,
   Building2,
 } from 'lucide-react';
+import { SchemeAudioNarrator } from '@/components/common/SchemeAudioNarrator';
 
 interface SchemeDetailPageProps {
   params: Promise<{ id: string }>;
@@ -84,6 +85,9 @@ export default function SchemeDetailPage({ params }: SchemeDetailPageProps) {
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-10 space-y-8">
+        {/* Audio Read-Aloud Accessibility Narrator */}
+        <SchemeAudioNarrator scheme={scheme} variant="full" />
+
         {/* Description & Objective */}
         <section className="bg-white rounded-xl border border-neutral-grey/20 p-6 sm:p-8 shadow-sm space-y-4">
           <h2 className="text-lg font-bold text-deep-indigo">Scheme Objective & Overview</h2>
