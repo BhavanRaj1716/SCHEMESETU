@@ -116,6 +116,26 @@ def test_partners_radius_filter_and_sorting(client):
     assert client.get("/api/partners", params={"radius": 10}).status_code == 422
 
 
+def test_partner_states_and_districts_endpoints(client):
+    states = client.get("/api/partners/states").json()
+    assert states == sorted(states, key=str.lower)
+    assert len(states) == len(set(states))
+    assert "Tamil Nadu" in states
+
+    tn_districts = client.get("/api/partners/districts", params={"state": "Tamil Nadu"}).json()
+    assert tn_districts == sorted(tn_districts, key=str.lower)
+    assert len(tn_districts) == len(set(tn_districts))
+    assert "Coimbatore" in tn_districts
+    assert "Lucknow" not in tn_districts
+
+    all_districts = client.get("/api/partners/districts").json()
+    assert "Lucknow" in all_districts and "Coimbatore" in all_districts
+
+    blank_state = client.get("/api/partners/districts", params={"state": "   "})
+    assert blank_state.status_code == 422
+    assert blank_state.json()["error"]["code"] == "INVALID_REQUEST"
+
+
 def test_partner_detail_never_fabricates_health_data(client):
     p = client.get("/api/partners/demo-sca-cbe").json()
     assert p["fundHealth"] == {"available": False, "message": "Partner-level fund-health information is not available in the current verified dataset."}

@@ -4,9 +4,10 @@ Tests how well the fine-tuned model handles Hindi written in English script (Hin
 """
 import torch
 from sentence_transformers import SentenceTransformer, util
+from pathlib import Path
 
-BASE_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
-TUNED_MODEL_PATH = r"E:\SIH PROTOTPYE\schemesetu_minilm_final"
+BASE_MODEL_NAME = "intfloat/multilingual-e5-small"
+TUNED_MODEL_PATH = Path(__file__).resolve().parent / "schemesetu_e5_final"
 
 print("=" * 70)
 print("  SchemeSetu Hinglish / Transliterated Query Benchmark")
@@ -80,4 +81,3 @@ for idx, tc in enumerate(hinglish_test_cases, 1):
     print(f"  Base Model     : Match = {b_pos:.4f} | Distractor = {b_neg:.4f} | Margin = {b_margin:+.4f}")
     print(f"  Fine-Tuned     : Match = {t_pos:.4f} | Distractor = {t_neg:.4f} | Margin = {t_margin:+.4f}")
     print(f"  Query Fidelity : Similarity between Hinglish query and English equivalent = {cross_sim:.4f}")
-

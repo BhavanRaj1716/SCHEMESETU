@@ -8,12 +8,15 @@ import numpy as np
 from sentence_transformers import SentenceTransformer, util
 
 import sys
+from pathlib import Path
+
+ROOT_DIR = Path(__file__).resolve().parent
 
 # Redirect stdout to both console and file
 class Logger(object):
     def __init__(self):
         self.terminal = sys.stdout
-        self.log = open(r"E:\SIH PROTOTPYE\benchmark_results.txt", "w", encoding="utf-8")
+        self.log = open(ROOT_DIR / "benchmark_results.txt", "w", encoding="utf-8")
 
     def write(self, message):
         self.terminal.write(message)
@@ -26,8 +29,8 @@ class Logger(object):
 
 sys.stdout = Logger()
 
-BASE_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
-TUNED_MODEL_PATH = r"E:\SIH PROTOTPYE\schemesetu_e5_final"
+BASE_MODEL_NAME = "intfloat/multilingual-e5-small"
+TUNED_MODEL_PATH = ROOT_DIR / "schemesetu_e5_final"
 
 print("=" * 65)
 print("  SchemeSetu: Base Model vs Fine-Tuned Model Comparison")
@@ -36,7 +39,7 @@ print("=" * 65)
 print("\n[1/3] Loading Base Model...")
 base_model = SentenceTransformer(BASE_MODEL_NAME)
 
-print("[2/3] Loading Fine-Tuned Model from schemesetu_minilm_final...")
+print("[2/3] Loading Fine-Tuned Model from schemesetu_e5_final...")
 tuned_model = SentenceTransformer(TUNED_MODEL_PATH)
 
 print("[3/3] Running Benchmark Test Cases...\n")

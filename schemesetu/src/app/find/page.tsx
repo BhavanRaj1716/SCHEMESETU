@@ -16,22 +16,32 @@ export default function FindSchemePage() {
   const [mode, setMode] = useState<SearchMode>('guided');
   const [pageState, setPageState] = useState<PageState>('input');
   const [results, setResults] = useState<RecommendationResponse | null>(null);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [lastRequest, setLastRequest] = useState<RecommendationRequest | null>(null);
 
   const handleSearch = async (request: RecommendationRequest) => {
+    setLastRequest(request);
+    setErrorMessage(null);
     setPageState('loading');
     try {
       const response = await getRecommendations(request);
       setResults(response);
       setPageState('results');
-    } catch {
+    } catch (error) {
       setPageState('results');
       setResults(null);
+      setErrorMessage(
+        error instanceof Error && error.message
+          ? error.message
+          : 'Unable to complete search right now. Please try again.'
+      );
     }
   };
 
   const handleReset = () => {
     setPageState('input');
     setResults(null);
+    setErrorMessage(null);
   };
 
   return (
@@ -92,11 +102,35 @@ export default function FindSchemePage() {
 
         {pageState === 'loading' && <LoadingSequence />}
 
-        {pageState === 'results' && (
-          <SchemeResults
-            response={results}
-            onBack={handleReset}
-          />
+        {pageState === 'results' && errorMessage ? (
+          <div className="rounded-xl border border-red-200 bg-red-50 p-5 sm:p-6">
+            <h2 className="text-lg font-semibold text-red-800 mb-2">Search failed</h2>
+            <p className="text-sm text-red-700 mb-4">{errorMessage}</p>
+            <div className="flex gap-3">
+              <button
+                type="button"
+                onClick={() => lastRequest && handleSearch(lastRequest)}
+                disabled={!lastRequest}
+                className="inline-flex items-center rounded-md bg-red-700 px-4 py-2 text-sm font-medium text-white hover:bg-red-800 disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                Retry Search
+              </button>
+              <button
+                type="button"
+                onClick={handleReset}
+                className="inline-flex items-center rounded-md border border-red-300 px-4 py-2 text-sm font-medium text-red-700 hover:bg-red-100"
+              >
+                Back to Search
+              </button>
+            </div>
+          </div>
+        ) : (
+          pageState === 'results' && (
+            <SchemeResults
+              response={results}
+              onBack={handleReset}
+            />
+          )
         )}
       </div>
     </div>

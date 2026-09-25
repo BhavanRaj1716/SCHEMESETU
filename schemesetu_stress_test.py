@@ -1,7 +1,8 @@
 from sentence_transformers import SentenceTransformer
 import numpy as np
+from pathlib import Path
 
-MODEL = r"E:\SIH PROTOTPYE\schemesetu_e5_final"
+MODEL = Path(__file__).resolve().parent / "schemesetu_e5_final"
 
 schemes = {
     "MFS": "passage: Micro credit finance for small income-generating units costing up to ₹1.40 lakh. Loan up to 90% of project cost, maximum ₹1.25 lakh per unit.",

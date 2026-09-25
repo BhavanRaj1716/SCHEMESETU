@@ -44,7 +44,7 @@ The platform provides:
 - **In-Person Bank / Partner Processing (> ₹15 Lakhs or Business Expansions)**: Alerts beneficiaries when credit requests exceed the online digital processing ceiling, routing them to their nearest physical Bank branch or State Channelizing Agency (SCA).
 
 ### 4. 📍 Verified Channel Partner & SCA Directory
-- Complete directory of **96 verified partners across India**, including **39 State Channelizing Agencies (SCAs)** (e.g., TAHDCO in Tamil Nadu, APSCCFC in Andhra Pradesh, DSIIDC in Delhi), Public Sector Banks (PSBs), Regional Rural Banks (RRBs), and NBFC-MFIs.
+- Complete directory of **96 verified partners across India**, including **39 State Channelizing Agencies (SCAs)** (e.g., TAHDCO in Tamil Nadu, APSCCFC in Andhra Pradesh, DSIIDC in Delhi), Public Sector Banks (PSBs), Regional Rural Banks (RRBs), and NBFC-MFIs, plus clearly labeled **DEMO** records used only for UI/testing demonstrations.
 - Radius search, district/state filtering, and interactive mapping.
 
 ### 5. 🧮 Concessional EMI & Moratorium Calculator
@@ -103,7 +103,7 @@ The platform provides:
 | **AI / NLP** | PyTorch, Sentence-Transformers, HuggingFace | Custom fine-tuned `intfloat/multilingual-e5-small` 384-dimensional embeddings. |
 | **Database** | SQLite (zero-setup dev) / PostgreSQL + pgvector | In-process cosine vector search or pgvector HNSW indexing. |
 | **Validation** | Pydantic v2 | Strict schema validation with camelCase API contract. |
-| **Testing** | Pytest, Next.js Test Suite | Comprehensive unit, API integration, and stress test suites. |
+| **Testing** | Pytest (backend), script-level benchmark/stress checks | Backend unit/integration/API contract coverage and multilingual retrieval evaluation scripts. |
 
 ---
 
@@ -125,17 +125,14 @@ SIH PROTOTYPE/
 │   │   ├── api/routes/              # API endpoints (/schemes, /recommend, /calculator, /partners, /health)
 │   │   ├── core/                    # Application configuration (.env) and security
 │   │   ├── db/models/               # SQLAlchemy models (Scheme, EligibilityRule, ChannelPartner, User)
-│   │   ├── ingestion/nsfdc/         # Verified datasets (schemes & 96 channel partners)
+│   │   ├── ingestion/nsfdc/         # Verified datasets + clearly labeled demo partner records
 │   │   ├── schemas/                 # Pydantic request/response models
 │   │   └── services/                # Semantic search, eligibility engine, recommendation pipeline
 │   ├── tests/                       # 68 automated pytest unit and integration tests
 │   ├── requirements.txt             # Python dependencies
-│   └── schemesetu.db                # Zero-setup local SQLite database
+│   └── schemesetu.db                # Created locally by init/seed steps (gitignored)
 │
-├── schemesetu_e5_final/             # Fine-tuned Multilingual E5 Embedding Model
-│   ├── model.safetensors            # 470 MB compact model weights
-│   ├── tokenizer.json               # Multilingual tokenizer
-│   └── config.json
+├── schemesetu_e5_final/             # Fine-tuned Multilingual E5 Embedding Model (optional local download/train output; binary weights are not committed)
 │
 ├── train_e5.py                      # Contrastive fine-tuning training script
 ├── evaluate_model.py                # Model benchmarking script
@@ -183,13 +180,14 @@ SIH PROTOTYPE/
    ```bash
    cp .env.example .env
    ```
-   *(By default, `.env` is configured to run zero-setup local SQLite with the fine-tuned E5 model).*
+   *(By default, `.env` is configured to run zero-setup local SQLite with `intfloat/multilingual-e5-small`. You can set `EMBEDDING_MODEL=./schemesetu_e5_final` after training or downloading local weights.)*
 
 5. Initialize and seed the database:
    ```bash
    python -m scripts.init_db
    python -m seed.seed
    ```
+   This creates and seeds the local SQLite database (`schemesetu.db`), which is gitignored for clean clones.
 
 6. Start the FastAPI development server:
    ```bash
@@ -242,6 +240,14 @@ python schemesetu_stress_test.py
 ```
 *(Evaluates retrieval accuracy across Hindi, Tamil, Hinglish, Tanglish, and noisy citizen queries).*
 
+### Model Weights
+- Reproduce local fine-tuned weights with:
+  ```bash
+  python train_e5.py
+  ```
+- Or download model weights from Hugging Face.
+- Large binary model artifacts are intentionally excluded from Git (GitHub's 100 MB file limit).
+
 ### 3. Build Frontend for Production
 ```bash
 cd schemesetu
@@ -254,7 +260,7 @@ npm run build
 
 The fine-tuned **SchemeSetu E5 Model** demonstrates significant margin separation improvement over base pretrained models:
 
-| Metric / Scenario | Base Model (`all-MiniLM-L6-v2`) | SchemeSetu Fine-Tuned E5 | Improvement |
+| Metric / Scenario | Base Model (`intfloat/multilingual-e5-small`) | SchemeSetu Fine-Tuned E5 | Improvement |
 | :--- | :--- | :--- | :--- |
 | **Sanitation & Safai Karamchari Queries** | +0.284 Margin | **+0.612 Margin** | **+115.4% Separation** |
 | **Higher Education Abroad Queries** | +0.312 Margin | **+0.589 Margin** | **+88.7% Separation** |
