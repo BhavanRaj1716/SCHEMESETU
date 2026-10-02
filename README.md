@@ -27,9 +27,9 @@ The platform provides:
 
 ## 🚀 Core Features
 
-### 1. 🧠 Fine-Tuned Multilingual Semantic AI Engine
-- Powered by a custom fine-tuned **`intfloat/multilingual-e5-small`** model (trained on **5,565 contrastive domain pairs**).
-- Handles natural, colloquial citizen queries, phonetic spellings, and mixed dialects:
+### 1. 🧠 Custom Fine-Tuned Multilingual AI Semantic Engine (Trained by SchemeSetu)
+- We custom-trained and fine-tuned our own domain model based on **`intfloat/multilingual-e5-small`** using **5,565 domain-specific contrastive multilingual pairs** (`schemesetu_multilingual_pairs.csv` via `train_e5.py`).
+- Handles natural, colloquial citizen queries, phonetic spellings, and regional mixed dialects:
   - *Hindi*: `"मुझे छोटे कारोबार के लिए कम राशि का ऋण चाहिए"` $\rightarrow$ Micro Finance Scheme (MFS)
   - *Hinglish*: `"Mujhe NBFC-MFI se microfinance chahiye"` $\rightarrow$ Aajeevika Micro-Finance Yojana (AMY)
   - *Tamil*: `"சிறிய சுயதொழிலுக்கு குறைந்த தொகை கடன் வேண்டும்"` $\rightarrow$ Micro Finance Scheme (MFS)
@@ -232,7 +232,7 @@ SIH PROTOTYPE/
 cd schemesetu-backend
 ..\.venv\Scripts\pytest
 ```
-*(Runs all 68 automated unit, eligibility, partner, calculator, and API contract tests).*
+*(Runs all 69 automated unit, eligibility, partner, calculator, and API contract tests).*
 
 ### 2. Run Multilingual AI Stress Test
 ```bash
