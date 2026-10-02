@@ -16,6 +16,8 @@ RUN pip install -r requirements.txt \
     fi
 
 COPY . .
+RUN sed -i 's/\r$//' ./scripts/entrypoint.sh \
+ && chmod +x ./scripts/entrypoint.sh
 RUN useradd -m appuser && chown -R appuser /app
 USER appuser
 
