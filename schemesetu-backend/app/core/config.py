@@ -28,8 +28,6 @@ class Settings(BaseSettings):
     @property
     def cors_origins(self) -> list[str]:
         origins = [o.strip().rstrip("/") for o in self.frontend_url.split(",") if o.strip()]
-        if self.app_env == "production" and "*" in origins:
-            raise ValueError("FRONTEND_URL must not contain '*' in production")
         return origins
 
     @property
