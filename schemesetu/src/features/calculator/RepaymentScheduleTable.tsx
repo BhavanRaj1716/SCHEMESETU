@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import type { RepaymentScheduleEntry, YearlyScheduleEntry } from '@/types/calculator';
 import { formatIndianCurrency } from '@/services/calculatorService';
-import { Calendar, ChevronDown, ChevronUp, Table as TableIcon, Layers } from 'lucide-react';
+import { Calendar, ChevronDown, ChevronUp, Layers } from 'lucide-react';
 
 interface RepaymentScheduleTableProps {
   schedule: RepaymentScheduleEntry[];

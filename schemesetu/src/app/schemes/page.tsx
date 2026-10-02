@@ -16,7 +16,6 @@ import {
   Building2,
   Sparkles,
   X,
-  Volume2,
 } from 'lucide-react';
 import { VoiceSearchButton } from '@/components/common/VoiceSearchButton';
 import { SchemeAudioNarrator } from '@/components/common/SchemeAudioNarrator';
@@ -180,13 +179,13 @@ export default function SchemeDirectoryPage() {
 
   // Call backend semantic search if active when query is typed or spoken
   useEffect(() => {
-    const trimmed = searchQuery.trim();
-    if (!trimmed || trimmed.length < 3) {
-      setSemanticRankings({});
-      return;
-    }
-
     const timer = setTimeout(async () => {
+      const trimmed = searchQuery.trim();
+      if (!trimmed || trimmed.length < 3) {
+        setSemanticRankings({});
+        return;
+      }
+
       try {
         const res = await getRecommendations({ mode: 'semantic', query: trimmed });
         if (res && res.recommendations) {

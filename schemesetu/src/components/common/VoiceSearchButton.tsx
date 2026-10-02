@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import { Mic, MicOff, Volume2, Globe } from 'lucide-react';
+import { Mic, MicOff, Globe } from 'lucide-react';
 
 export interface VoiceLanguage {
   code: string;
@@ -25,27 +25,6 @@ export const SUPPORTED_VOICE_LANGUAGES: VoiceLanguage[] = [
   { code: 'ur', name: 'Urdu', nativeName: 'اردو', locale: 'ur-IN' },
 ];
 
-interface VoiceSearchButtonProps {
-  onTranscript: (text: string) => void;
-  onInterimTranscript?: (text: string) => void;
-  className?: string;
-  defaultLangCode?: string;
-  size?: 'sm' | 'md' | 'lg';
-}
-
-export function VoiceSearchButton({
-  onTranscript,
-  onInterimTranscript,
-  className = '',
-  defaultLangCode = 'hi',
-  size = 'md',
-}: VoiceSearchButtonProps) {
-  const [isListening, setIsListening] = useState(false);
-  const [selectedLang, setSelectedLang] = useState<string>(defaultLangCode);
-  const [showLangMenu, setShowLangMenu] = useState(false);
-  const [isSupported, setIsSupported] = useState(true);
-  const [interimText, setInterimText] = useState('');
-  const [lastSpokenText, setLastSpokenText] = useState('');
 // Browser SpeechRecognition API — no official @types package exists
 interface SpeechRecognitionEvent extends Event {
   resultIndex: number;
@@ -67,6 +46,39 @@ interface SpeechRecognitionInstance extends EventTarget {
   onerror: ((event: SpeechRecognitionErrorEvent) => void) | null;
   onend: (() => void) | null;
 }
+
+interface VoiceSearchButtonProps {
+  onTranscript: (text: string) => void;
+  onInterimTranscript?: (text: string) => void;
+  className?: string;
+  defaultLangCode?: string;
+  size?: 'sm' | 'md' | 'lg';
+}
+
+export function VoiceSearchButton({
+  onTranscript,
+  onInterimTranscript,
+  className = '',
+  defaultLangCode = 'hi',
+  size = 'md',
+}: VoiceSearchButtonProps) {
+  const [isListening, setIsListening] = useState(false);
+  const [selectedLang, setSelectedLang] = useState<string>(() => {
+    if (typeof document !== 'undefined') {
+      const match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]*)/);
+      if (match && match[1]) {
+        const parts = decodeURIComponent(match[1]).split('/');
+        const savedCode = parts[parts.length - 1];
+        if (savedCode && SUPPORTED_VOICE_LANGUAGES.some((l) => l.code === savedCode)) {
+          return savedCode;
+        }
+      }
+    }
+    return defaultLangCode;
+  });
+  const [showLangMenu, setShowLangMenu] = useState(false);
+  const [isSupported, setIsSupported] = useState(true);
+  const [interimText, setInterimText] = useState('');
 
   const recognitionRef = useRef<SpeechRecognitionInstance | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -93,18 +105,6 @@ interface SpeechRecognitionInstance extends EventTarget {
       }
     }, 2500);
   };
-
-  // Sync speech locale with current active website language cookie
-  useEffect(() => {
-    const match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]*)/);
-    if (match && match[1]) {
-      const parts = decodeURIComponent(match[1]).split('/');
-      const savedCode = parts[parts.length - 1];
-      if (savedCode && SUPPORTED_VOICE_LANGUAGES.some((l) => l.code === savedCode)) {
-        setSelectedLang(savedCode);
-      }
-    }
-  }, []);
 
   // Cleanup timers on unmount
   useEffect(() => {
@@ -171,7 +171,6 @@ interface SpeechRecognitionInstance extends EventTarget {
 
       if (finalStr) {
         const cleaned = finalStr.trim();
-        setLastSpokenText(cleaned);
         onTranscript(cleaned);
       }
     };
@@ -190,7 +189,6 @@ interface SpeechRecognitionInstance extends EventTarget {
       // If we had pending interim text that wasn't finalized, emit it now
       if (latestTranscriptRef.current.trim()) {
         const finalFallback = latestTranscriptRef.current.trim();
-        setLastSpokenText(finalFallback);
         onTranscript(finalFallback);
       }
       setInterimText('');

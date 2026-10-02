@@ -141,17 +141,30 @@ export function SchemeAudioNarrator({
 }: SchemeAudioNarratorProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
-  const [isSupported, setIsSupported] = useState(true);
-  const [activeLang, setActiveLang] = useState('hi');
+  const [isSupported] = useState<boolean>(
+    () => typeof window !== 'undefined' && 'speechSynthesis' in window,
+  );
+  const [activeLang, setActiveLang] = useState<string>(() => {
+    if (typeof document !== 'undefined') {
+      const match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]*)/);
+      if (match && match[1]) {
+        const parts = decodeURIComponent(match[1]).split('/');
+        const code = parts[parts.length - 1];
+        if (code && NARRATOR_LANGUAGES[code]) {
+          return code;
+        }
+      }
+    }
+    return 'hi';
+  });
   const [speechRate, setSpeechRate] = useState<number>(0.9); // 0.9x natural clear cadence
   const [showLangMenu, setShowLangMenu] = useState(false);
   const [availableVoices, setAvailableVoices] = useState<SpeechSynthesisVoice[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Sync with website translation cookie and load system voices
+  // Load system voices
   useEffect(() => {
     if (typeof window === 'undefined' || !window.speechSynthesis) {
-      setIsSupported(false);
       return;
     }
 
@@ -169,15 +182,6 @@ export function SchemeAudioNarrator({
     loadVoices();
     if (window.speechSynthesis.onvoiceschanged !== undefined) {
       window.speechSynthesis.onvoiceschanged = loadVoices;
-    }
-
-    const match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]*)/);
-    if (match && match[1]) {
-      const parts = decodeURIComponent(match[1]).split('/');
-      const code = parts[parts.length - 1];
-      if (code && NARRATOR_LANGUAGES[code]) {
-        setActiveLang(code);
-      }
     }
   }, []);
 
