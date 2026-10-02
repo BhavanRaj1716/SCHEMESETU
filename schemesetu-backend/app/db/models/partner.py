@@ -15,7 +15,7 @@ class ChannelPartner(Base):
     __tablename__ = "channel_partners"
     __table_args__ = (CheckConstraint("data_status IN ('LIVE','VERIFIED','DEMO')", name="ck_partners_data_status"),)
 
-    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    id: Mapped[str] = mapped_column(String(128), primary_key=True)
     name: Mapped[str] = mapped_column(String(255), nullable=False)
     type: Mapped[str] = mapped_column(String(32), nullable=False, index=True)
     state: Mapped[str | None] = mapped_column(String(64), index=True)
