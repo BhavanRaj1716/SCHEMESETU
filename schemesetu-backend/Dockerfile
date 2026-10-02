@@ -5,8 +5,8 @@ WORKDIR /app
 
 # INSTALL_ML=true installs sentence-transformers (real semantic embeddings, large image).
 # INSTALL_ML=false gives a small image that must run with EMBEDDING_PROVIDER=hashing (lexical fallback).
-ARG INSTALL_ML=true
-ARG EMBEDDING_MODEL=sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+ARG INSTALL_ML=false
+ARG EMBEDDING_MODEL=intfloat/multilingual-e5-small
 
 COPY requirements.txt requirements-ml.txt ./
 RUN pip install -r requirements.txt \
